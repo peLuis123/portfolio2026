@@ -6,25 +6,60 @@ function Hero() {
 
   return (
     <section className="pt-32 pb-20 px-6">
-      <div className="max-w-7xl mx-auto">
-        <h2 className="text-primary font-mono mb-4">
-          {translations.hero.hello}
-        </h2>
+      <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 className="text-primary font-mono mb-4 text-lg">Hello, I'm a</h2>
+          <h1 className="text-5xl lg:text-7xl font-bold leading-tight mb-6">
+            Fullstack <br />
+            <span className="text-transparent bg-clip-text code-gradient">Architect</span>
+          </h1>
+          <p className="text-xl text-slate-600 dark:text-slate-400 mb-10 max-w-xl leading-relaxed">
+            I build scalable digital solutions with a focus on high-performance backends and intuitive, modern user interfaces.
+          </p>
+          <div className="flex flex-wrap gap-4">
+            <button className="px-8 py-4 bg-primary text-white font-bold rounded-xl hover:shadow-lg hover:shadow-primary/20 transition-all flex items-center gap-2">
+              View My Work
+              <span className="material-symbols-outlined">arrow_downward</span>
+            </button>
+            <button className="px-8 py-4 bg-slate-200 dark:bg-white/5 text-slate-900 dark:text-white font-bold rounded-xl hover:bg-slate-300 dark:hover:bg-white/10 transition-all">
+              Resume.pdf
+            </button>
+          </div>
+        </div>
 
-        <h1 className="text-5xl font-bold mb-6">
-          {translations.hero.title}
-        </h1>
-
-        <p className="text-xl text-slate-600 dark:text-slate-400 mb-10 max-w-xl">
-          {translations.hero.description}
-        </p>
-
-        <button className="px-8 py-4 bg-primary text-white rounded-xl">
-          {translations.hero.viewWork}
-        </button>
+        <div className="glass rounded-xl overflow-hidden shadow-2xl border border-white/10">
+          <div className="bg-white/5 px-4 py-3 border-b border-white/10 flex items-center gap-2">
+            <div className="w-3 h-3 rounded-full bg-red-500/50"></div>
+            <div className="w-3 h-3 rounded-full bg-yellow-500/50"></div>
+            <div className="w-3 h-3 rounded-full bg-green-500/50"></div>
+            <span className="ml-4 text-xs font-mono text-slate-500">developer.json — 120×40</span>
+          </div>
+          <div className="p-8 font-mono text-sm leading-relaxed text-slate-300">
+            <div className="mb-2"><span className="text-purple-400">const</span> <span className="text-primary">developer</span> = {"{"}</div>
+            <div className="ml-6 mb-2">
+              <span className="text-slate-500 dark:text-slate-300">name:</span> <span className="text-emerald-400">"Pedro Luis"</span>,
+            </div>
+            <div className="ml-6 mb-2">
+              <span className="text-slate-500 dark:text-slate-300">role:</span> <span className="text-emerald-400">"Fullstack Engineer"</span>,
+            </div>
+            <div className="ml-6 mb-2">
+              <span className="text-slate-500 dark:text-slate-300">specialty:</span> [<span className="text-emerald-400">"Scalability"</span>, <span className="text-emerald-400">"UI/UX"</span>],
+            </div>
+            <div className="ml-6 mb-2">
+              <span className="text-slate-500 dark:text-slate-300">coffee_addict:</span> <span className="text-orange-400">true</span>,
+            </div>
+            <div className="ml-6 mb-2">
+              <span className="text-slate-500 dark:text-slate-300">location:</span> <span className="text-emerald-400">"Remote"</span>,
+            </div>
+            <div className="ml-6 mb-2">
+              <span className="text-slate-500 dark:text-slate-300">available_for_hire:</span> <span className="text-orange-400">true</span>
+            </div>
+            <div>{"}"};</div>
+            <div className="mt-4 animate-pulse"><span className="text-primary">➜</span> <span className="text-slate-400">|</span></div>
+          </div>
+        </div>
       </div>
     </section>
   );
 }
-
 export default Hero;

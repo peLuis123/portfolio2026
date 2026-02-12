@@ -1,10 +1,35 @@
 @import "tailwindcss";
+@variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-primary: #2b8cee;
+  --color-background-light: #f6f7f8;
+  --color-background-dark: #101922;
+
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "Fira Code", monospace;
+}
 
 @layer utilities {
   .glass {
     background: rgba(255, 255, 255, 0.03);
     backdrop-filter: blur(12px);
     border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .glow-hover:hover {
+    box-shadow: 0 0 20px rgba(43, 140, 238, 0.3);
+    border-color: rgba(43, 140, 238, 0.5);
+  }
+
+  .code-gradient {
+    background: linear-gradient(135deg, #2b8cee 0%, #a855f7 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+
+  .timeline-line {
+    background: linear-gradient(to bottom, #2b8cee, #a855f7, transparent);
   }
 
   .tag {
