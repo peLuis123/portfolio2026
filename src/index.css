@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .glass {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .tag {
+    @apply px-3 py-1 bg-white/5 border border-white/10 rounded-md text-sm;
+  }
+}
