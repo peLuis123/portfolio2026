@@ -24,16 +24,27 @@ function Hero() {
           </p>
 
           <div className="flex flex-wrap gap-4">
-            <button className="px-8 py-4 bg-primary text-white font-bold rounded-xl hover:shadow-lg hover:shadow-primary/20 transition-all flex items-center gap-2">
+            <button
+              className="px-8 py-4 bg-primary text-white font-bold rounded-xl hover:shadow-lg hover:shadow-primary/20 transition-all flex items-center gap-2"
+              onClick={() => {
+                const section = document.getElementById('projects');
+                if (section) section.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
               {translations.hero.viewWork}
               <span className="material-symbols-outlined">
                 arrow_downward
               </span>
             </button>
 
-            <button className="px-8 py-4 bg-slate-200 dark:bg-white/5 text-slate-900 dark:text-white font-bold rounded-xl hover:bg-slate-300 dark:hover:bg-white/10 transition-all">
+            <a
+              href="https://drive.google.com/file/d/10OnwoqUfPJ3VaN7NsbhrRgIV1qGvNNqW/view?usp=drive_link"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8 py-4 bg-slate-200 dark:bg-white/5 text-slate-900 dark:text-white font-bold rounded-xl hover:bg-slate-300 dark:hover:bg-white/10 transition-all"
+            >
               {translations.hero.resume}
-            </button>
+            </a>
           </div>
         </div>
 
