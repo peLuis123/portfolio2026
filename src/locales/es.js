@@ -165,7 +165,7 @@ export default {
         tags: ["Frontend", "Crypto"],
         frontendUrl: "https://github.com/peLuis123/cryptodash",
         backendUrl: "#",
-        demoUrl: "https://www.youtube.com/results?search_query=crypto+dashboard+demo"
+        demoUrl: "https://drive.google.com/file/d/16CMr6bE1UkZ6aC2UllK3Y5YesHRiFUyp/view?usp=drive_link"
       },
       {
         title: "CryptoShop",
@@ -176,7 +176,7 @@ export default {
         tags: ["Fullstack", "TRX"],
         frontendUrl: "https://github.com/peLuis123/crypto-shop-frontend",
         backendUrl: "https://github.com/peLuis123/crypto-shop-backend",
-        demoUrl: "https://www.youtube.com/results?search_query=crypto+shop+ecommerce+demo"
+        demoUrl: "https://drive.google.com/file/d/18ktZ2Pm8QbadIrVFiQN-wAr-Vg8Ox6r3/view?usp=drive_link"
       },
       {
         title: "Stripe Payments API",
@@ -187,7 +187,7 @@ export default {
         tags: ["Backend", "Stripe"],
         frontendUrl: "#",
         backendUrl: "https://github.com/peLuis123/Stripe_Back",
-        demoUrl: "https://www.youtube.com/results?search_query=stripe+payments+api+demo"
+        demoUrl: "https://drive.google.com/file/d/1JQcI4XQjLq5J7WLIwTStIVUmhA2fM0GT/view?usp=drive_link"
       },
       {
         title: "VideoGames Platform",

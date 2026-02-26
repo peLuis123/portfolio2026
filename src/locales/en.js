@@ -158,14 +158,14 @@ export default {
     items: [
       {
         title: "CryptoDash",
-        imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Ethereum_logo_2014.svg/1200px-Ethereum_logo_2014.svg.png",
+        imageUrl: "https://www.creativefabrica.com/wp-content/uploads/2021/02/01/Crypto-Logos-Graphics-8240065-1-1-580x387.jpg",
         description:
           "Frontend crypto dashboard with real-time CoinGecko data, portfolio management, interactive charts, and bilingual support.",
         imageAlt: "CryptoDash dashboard with cryptocurrency metrics and charts",
         tags: ["Frontend", "Crypto"],
         frontendUrl: "https://github.com/peLuis123/cryptodash",
         backendUrl: "#",
-        demoUrl: "https://www.youtube.com/results?search_query=crypto+dashboard+demo"
+        demoUrl: "https://drive.google.com/file/d/16CMr6bE1UkZ6aC2UllK3Y5YesHRiFUyp/view?usp=drive_link"
       },
       {
         title: "CryptoShop",
@@ -176,18 +176,18 @@ export default {
         tags: ["Fullstack", "TRX"],
         frontendUrl: "https://github.com/peLuis123/crypto-shop-frontend",
         backendUrl: "https://github.com/peLuis123/crypto-shop-backend",
-        demoUrl: "https://www.youtube.com/results?search_query=crypto+shop+ecommerce+demo"
+        demoUrl: "https://drive.google.com/file/d/18ktZ2Pm8QbadIrVFiQN-wAr-Vg8Ox6r3/view?usp=drive_link"
       },
       {
         title: "Stripe Payments API",
-        imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Stripe_logo%2C_revised_2016.svg/1200px-Stripe_logo%2C_revised_2016.svg.png",
+        imageUrl: "https://miro.medium.com/v2/resize:fit:1400/1*8Izu1dIH7uyCZJpYZPyj9g.jpeg",
         description:
           "Modular backend API for customers, cards, payments, refunds, and Stripe webhooks with centralized error handling and Swagger docs.",
         imageAlt: "Stripe payments API with modular architecture and documentation",
         tags: ["Backend", "Stripe"],
         frontendUrl: "#",
         backendUrl: "https://github.com/peLuis123/Stripe_Back",
-        demoUrl: "https://www.youtube.com/results?search_query=stripe+payments+api+demo"
+        demoUrl: "https://drive.google.com/file/d/1JQcI4XQjLq5J7WLIwTStIVUmhA2fM0GT/view?usp=drive_link"
       },
       {
         title: "VideoGames Platform",
@@ -198,7 +198,7 @@ export default {
         tags: ["Fullstack", "Gaming"],
         frontendUrl: "https://github.com/peLuis123/videogames",
         backendUrl: "https://github.com/peLuis123/albun-backend",
-        demoUrl: "https://www.youtube.com/results?search_query=videogames+marketplace+demo"
+        demoUrl: "#"
       }
     ]
   },
