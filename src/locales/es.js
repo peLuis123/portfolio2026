@@ -147,6 +147,61 @@ export default {
       }
     ]
   },
+  projects: {
+    title: "Proyectos Destacados",
+    subtitle: "Aplicaciones reales enfocadas en producto, rendimiento y escalabilidad.",
+    viewAll: "Ver todos los proyectos",
+    viewAllUrl: "https://github.com/peLuis123",
+    frontendLabel: "Frontend",
+    backendLabel: "Backend",
+    demoLabel: "Demo",
+    items: [
+      {
+        title: "CryptoDash",
+        imageUrl: "https://www.creativefabrica.com/wp-content/uploads/2021/02/01/Crypto-Logos-Graphics-8240065-1-1-580x387.jpg",
+        description:
+          "Dashboard cripto frontend con datos en tiempo real de CoinGecko, gestión de portafolio, gráficos interactivos y soporte bilingüe.",
+        imageAlt: "Dashboard de CryptoDash con métricas y gráficos de criptomonedas",
+        tags: ["Frontend", "Crypto"],
+        frontendUrl: "https://github.com/peLuis123/cryptodash",
+        backendUrl: "#",
+        demoUrl: "https://www.youtube.com/results?search_query=crypto+dashboard+demo"
+      },
+      {
+        title: "CryptoShop",
+        imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bitcoin.svg/1200px-Bitcoin.svg.png",
+        description:
+          "E-commerce cripto fullstack con pagos en TRX: frontend con panel cliente/admin y backend con JWT, órdenes, confirmación on-chain y Socket.io.",
+        imageAlt: "Interfaz de tienda cripto con panel de administración y flujo de pagos",
+        tags: ["Fullstack", "TRX"],
+        frontendUrl: "https://github.com/peLuis123/crypto-shop-frontend",
+        backendUrl: "https://github.com/peLuis123/crypto-shop-backend",
+        demoUrl: "https://www.youtube.com/results?search_query=crypto+shop+ecommerce+demo"
+      },
+      {
+        title: "Stripe Payments API",
+        imageUrl: "https://miro.medium.com/v2/resize:fit:1400/1*8Izu1dIH7uyCZJpYZPyj9g.jpeg",
+        description:
+          "API backend modular para clientes, tarjetas, pagos, reembolsos y webhooks de Stripe, con manejo de errores centralizado y Swagger.",
+        imageAlt: "API de pagos Stripe con arquitectura modular y documentación",
+        tags: ["Backend", "Stripe"],
+        frontendUrl: "#",
+        backendUrl: "https://github.com/peLuis123/Stripe_Back",
+        demoUrl: "https://www.youtube.com/results?search_query=stripe+payments+api+demo"
+      },
+      {
+        title: "VideoGames Platform",
+        imageUrl: "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=1200&q=80",
+        description:
+          "Plataforma de compra y venta de videojuegos con catálogo, biblioteca de usuario, suscripciones y pagos, integrada con su backend dedicado.",
+        imageAlt: "Plataforma de videojuegos con catálogo y biblioteca personal",
+        tags: ["Fullstack", "Gaming"],
+        frontendUrl: "https://github.com/peLuis123/videogames",
+        backendUrl: "https://github.com/peLuis123/albun-backend",
+        demoUrl: "#"
+      }
+    ]
+  },
   contact: {
     title: "Contáctame",
     subtitle: "¿Tienes un proyecto en mente o solo quieres saludar? Me encantaría conversar contigo.",

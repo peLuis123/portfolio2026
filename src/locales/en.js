@@ -147,6 +147,61 @@ export default {
       }
     ]
   },
+  projects: {
+    title: "Featured Projects",
+    subtitle: "Real-world applications focused on product quality, performance and scalability.",
+    viewAll: "View all projects",
+    viewAllUrl: "https://github.com/peLuis123",
+    frontendLabel: "Frontend",
+    backendLabel: "Backend",
+    demoLabel: "Demo",
+    items: [
+      {
+        title: "CryptoDash",
+        imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Ethereum_logo_2014.svg/1200px-Ethereum_logo_2014.svg.png",
+        description:
+          "Frontend crypto dashboard with real-time CoinGecko data, portfolio management, interactive charts, and bilingual support.",
+        imageAlt: "CryptoDash dashboard with cryptocurrency metrics and charts",
+        tags: ["Frontend", "Crypto"],
+        frontendUrl: "https://github.com/peLuis123/cryptodash",
+        backendUrl: "#",
+        demoUrl: "https://www.youtube.com/results?search_query=crypto+dashboard+demo"
+      },
+      {
+        title: "CryptoShop",
+        imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bitcoin.svg/1200px-Bitcoin.svg.png",
+        description:
+          "Fullstack crypto e-commerce with TRX payments: frontend with client/admin panels and backend with JWT, orders, on-chain confirmation, and Socket.io.",
+        imageAlt: "Crypto shop interface with admin panel and payment flow",
+        tags: ["Fullstack", "TRX"],
+        frontendUrl: "https://github.com/peLuis123/crypto-shop-frontend",
+        backendUrl: "https://github.com/peLuis123/crypto-shop-backend",
+        demoUrl: "https://www.youtube.com/results?search_query=crypto+shop+ecommerce+demo"
+      },
+      {
+        title: "Stripe Payments API",
+        imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Stripe_logo%2C_revised_2016.svg/1200px-Stripe_logo%2C_revised_2016.svg.png",
+        description:
+          "Modular backend API for customers, cards, payments, refunds, and Stripe webhooks with centralized error handling and Swagger docs.",
+        imageAlt: "Stripe payments API with modular architecture and documentation",
+        tags: ["Backend", "Stripe"],
+        frontendUrl: "#",
+        backendUrl: "https://github.com/peLuis123/Stripe_Back",
+        demoUrl: "https://www.youtube.com/results?search_query=stripe+payments+api+demo"
+      },
+      {
+        title: "VideoGames Platform",
+        imageUrl: "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=1200&q=80",
+        description:
+          "Game buying and selling platform with catalog, user library, subscriptions, and payment methods, integrated with a dedicated backend.",
+        imageAlt: "Video games platform with catalog and personal library",
+        tags: ["Fullstack", "Gaming"],
+        frontendUrl: "https://github.com/peLuis123/videogames",
+        backendUrl: "https://github.com/peLuis123/albun-backend",
+        demoUrl: "https://www.youtube.com/results?search_query=videogames+marketplace+demo"
+      }
+    ]
+  },
   contact: {
     title: "Get In Touch",
     subtitle: "Have a project in mind or just want to say hi? I'd love to hear from you.",
