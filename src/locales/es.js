@@ -7,7 +7,7 @@ export default {
   },
   hero: {
     hello: "Hola, soy",
-    titleMain: "Arquitecto",
+    titleMain: "Desarrollador",
     titleAccent: "Fullstack",
     description:
       "Construyo soluciones digitales escalables con enfoque en backends de alto rendimiento e interfaces modernas e intuitivas.",

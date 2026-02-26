@@ -8,7 +8,7 @@ export default {
   hero: {
     hello: "Hello, I'm a",
     titleMain: "Fullstack",
-    titleAccent: "Architect",
+    titleAccent: "Developer",
     description:
       "I build scalable digital solutions with a focus on high-performance backends and intuitive, modern user interfaces.",
     viewWork: "View My Work",
