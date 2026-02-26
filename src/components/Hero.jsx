@@ -69,7 +69,7 @@ function Hero() {
                 name:
               </span>{" "}
               <span className="text-emerald-400">
-                "Luis Dev"
+                "Pedro Luis Ramos Calla"
               </span>,
             </div>
 
