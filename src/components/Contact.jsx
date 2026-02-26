@@ -1,9 +1,58 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { LanguageContext } from "../context/LanguageContext";
 
 function Contact() {
   const { translations } = useContext(LanguageContext);
   const contact = translations.contact;
+
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitState, setSubmitState] = useState("idle");
+
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    setIsSubmitting(true);
+    setSubmitState("idle");
+
+    const targetEmail = import.meta.env.VITE_CONTACT_EMAIL || contact.email;
+
+    try {
+      const response = await fetch(`https://formsubmit.co/ajax/${targetEmail}`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+          _subject: "Nuevo mensaje desde portfolio",
+          _captcha: "false",
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to send message");
+      }
+
+      setSubmitState("success");
+      setFormData({ name: "", email: "", message: "" });
+    } catch {
+      setSubmitState("error");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   return (
     <section className="py-24 px-6 bg-slate-100/50 dark:bg-black/20" id="contact">
@@ -99,7 +148,7 @@ function Contact() {
           <div className="glass p-8 md:p-10 rounded-2xl relative overflow-hidden">
             <div className="absolute top-0 right-0 w-32 h-32 bg-primary/10 blur-3xl -z-10 rounded-full"></div>
 
-            <form className="space-y-6">
+            <form className="space-y-6" onSubmit={handleSubmit}>
 
               <div className="grid md:grid-cols-2 gap-6">
 
@@ -109,8 +158,12 @@ function Contact() {
                   </label>
                   <input
                     className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all text-white placeholder:text-slate-600"
+                    name="name"
                     placeholder={contact.form.namePlaceholder}
                     type="text"
+                    value={formData.name}
+                    onChange={handleChange}
+                    required
                   />
                 </div>
 
@@ -120,8 +173,12 @@ function Contact() {
                   </label>
                   <input
                     className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all text-white placeholder:text-slate-600"
+                    name="email"
                     placeholder={contact.form.emailPlaceholder}
                     type="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
                   />
                 </div>
 
@@ -133,20 +190,37 @@ function Contact() {
                 </label>
                 <textarea
                   className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all text-white placeholder:text-slate-600 resize-none"
+                  name="message"
                   placeholder={contact.form.messagePlaceholder}
                   rows="5"
+                  value={formData.message}
+                  onChange={handleChange}
+                  required
                 ></textarea>
               </div>
 
               <button
                 className="w-full py-4 bg-primary hover:bg-primary/90 text-white font-bold rounded-xl shadow-lg shadow-primary/20 transition-all flex items-center justify-center gap-2"
                 type="submit"
+                disabled={isSubmitting}
               >
-                {contact.form.submit}
+                {isSubmitting ? contact.form.sending : contact.form.submit}
                 <span className="material-symbols-outlined text-xl">
                   send
                 </span>
               </button>
+
+              {submitState === "success" && (
+                <p className="text-sm text-emerald-400">
+                  {contact.form.success}
+                </p>
+              )}
+
+              {submitState === "error" && (
+                <p className="text-sm text-red-400">
+                  {contact.form.error}
+                </p>
+              )}
 
             </form>
           </div>

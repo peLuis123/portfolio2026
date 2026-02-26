@@ -225,7 +225,10 @@ export default {
       namePlaceholder: "Your name",
       emailPlaceholder: "your@email.com",
       messagePlaceholder: "Tell me about your project...",
-      submit: "Send Message"
+      submit: "Send Message",
+      sending: "Sending...",
+      success: "Message sent successfully. I'll get back to you soon.",
+      error: "Message could not be sent. Please try again."
     }
   },
   footer: {
