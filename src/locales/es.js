@@ -160,12 +160,13 @@ export default {
         title: "CryptoDash",
         imageUrl: "https://www.creativefabrica.com/wp-content/uploads/2021/02/01/Crypto-Logos-Graphics-8240065-1-1-580x387.jpg",
         description:
-          "Dashboard cripto frontend con datos en tiempo real de CoinGecko, gestión de portafolio, gráficos interactivos y soporte bilingüe.",
+          "Dashboard cripto frontend con datos en tiempo real de CoinGecko, gestión de portafolio, gráficos interactivos y soporte bilingüe. Desplegado en producción: ver enlace abajo.",
         imageAlt: "Dashboard de CryptoDash con métricas y gráficos de criptomonedas",
         tags: ["Frontend", "Crypto"],
         frontendUrl: "https://github.com/peLuis123/cryptodash",
         backendUrl: "#",
-        demoUrl: "https://drive.google.com/file/d/16CMr6bE1UkZ6aC2UllK3Y5YesHRiFUyp/view?usp=drive_link"
+        demoUrl: "https://drive.google.com/file/d/16CMr6bE1UkZ6aC2UllK3Y5YesHRiFUyp/view?usp=drive_link",
+        productionUrl: "https://crypto-dashx.netlify.app/"
       },
       {
         title: "CryptoShop",

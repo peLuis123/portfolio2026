@@ -80,6 +80,12 @@ function Projects() {
                       {projects.demoLabel}
                     </a>
                   )}
+                  {project.productionUrl && project.title === "CryptoDash" && (
+                    <a className="flex items-center gap-1.5 text-sm font-medium hover:text-green-500 transition-colors" href={project.productionUrl} target="_blank" rel="noopener noreferrer">
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="currentColor"/><path d="M8 12l2 2 4-4" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                      Production
+                    </a>
+                  )}
                 </div>
               </div>
             </div>
