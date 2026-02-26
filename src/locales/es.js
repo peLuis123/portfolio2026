@@ -188,7 +188,8 @@ export default {
         tags: ["Backend", "Stripe"],
         frontendUrl: "#",
         backendUrl: "https://github.com/peLuis123/Stripe_Back",
-        demoUrl: "https://drive.google.com/file/d/1JQcI4XQjLq5J7WLIwTStIVUmhA2fM0GT/view?usp=drive_link"
+        demoUrl: "https://drive.google.com/file/d/1JQcI4XQjLq5J7WLIwTStIVUmhA2fM0GT/view?usp=drive_link",
+        productionUrl: "https://api-stripe.onrender.com/doc/"
       },
       {
         title: "VideoGames Platform",
