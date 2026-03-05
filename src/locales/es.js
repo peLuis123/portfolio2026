@@ -156,6 +156,8 @@ export default {
     viewAllUrl: "https://github.com/peLuis123",
     frontendLabel: "Frontend",
     backendLabel: "Backend",
+    frontendDocsLabel: "Docs Frontend",
+    backendDocsLabel: "Docs Backend",
     demoLabel: "Demo",
     items: [
       {
@@ -166,6 +168,7 @@ export default {
         imageAlt: "Dashboard de CryptoDash con métricas y gráficos de criptomonedas",
         tags: ["Frontend", "Crypto"],
         frontendUrl: "https://github.com/peLuis123/cryptodash",
+        frontendDocsUrl: "https://peluis123-cryptodash.mintlify.app/",
         backendUrl: "#",
         demoUrl: "https://drive.google.com/file/d/16CMr6bE1UkZ6aC2UllK3Y5YesHRiFUyp/view?usp=drive_link",
         productionUrl: "https://crypto-dashx.netlify.app/"
@@ -179,6 +182,8 @@ export default {
         tags: ["Fullstack", "TRX"],
         frontendUrl: "https://github.com/peLuis123/crypto-shop-frontend",
         backendUrl: "https://github.com/peLuis123/crypto-shop-backend",
+        frontendDocsUrl: "https://peluis123-crypto-shop-frontend.mintlify.app/introduction",
+        backendDocsUrl: "https://peluis123-crypto-shop-backend-30.mintlify.app/introduction",
         demoUrl: "https://drive.google.com/file/d/18ktZ2Pm8QbadIrVFiQN-wAr-Vg8Ox6r3/view?usp=drive_link"
       },
       {
@@ -190,6 +195,7 @@ export default {
         tags: ["Backend", "Stripe"],
         frontendUrl: "#",
         backendUrl: "https://github.com/peLuis123/Stripe_Back",
+        backendDocsUrl: "https://peluis123-stripe_back.mintlify.app/",
         demoUrl: "https://drive.google.com/file/d/1JQcI4XQjLq5J7WLIwTStIVUmhA2fM0GT/view?usp=drive_link",
         productionUrl: "https://api-stripe.onrender.com/doc/"
       },
@@ -202,6 +208,7 @@ export default {
         tags: ["Fullstack", "Gaming"],
         frontendUrl: "https://github.com/peLuis123/videogames",
         backendUrl: "https://github.com/peLuis123/albun-backend",
+        backendDocsUrl: "https://peluis123-albun-backend.mintlify.app/introduction",
         demoUrl: "#"
       }
     ]

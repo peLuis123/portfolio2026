@@ -74,6 +74,18 @@ function Projects() {
                       {projects.backendLabel}
                     </a>
                   )}
+                  {hasLink(project.frontendDocsUrl) && (
+                    <a className="flex items-center gap-1.5 text-sm font-medium hover:text-primary transition-colors" {...getLinkProps(project.frontendDocsUrl)}>
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 12h6M9 16h6M9 8h6M5 4h14a1 1 0 011 1v14a1 1 0 01-1 1H5a1 1 0 01-1-1V5a1 1 0 011-1z" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"></path></svg>
+                      {projects.frontendDocsLabel}
+                    </a>
+                  )}
+                  {hasLink(project.backendDocsUrl) && (
+                    <a className="flex items-center gap-1.5 text-sm font-medium hover:text-primary transition-colors" {...getLinkProps(project.backendDocsUrl)}>
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 12h6M9 16h6M9 8h6M5 4h14a1 1 0 011 1v14a1 1 0 01-1 1H5a1 1 0 01-1-1V5a1 1 0 011-1z" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"></path></svg>
+                      {projects.backendDocsLabel}
+                    </a>
+                  )}
                   {hasLink(project.demoUrl) && (
                     <a className="flex items-center gap-1.5 text-sm font-medium hover:text-primary transition-colors" {...getLinkProps(project.demoUrl)}>
                       <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"></path></svg>
