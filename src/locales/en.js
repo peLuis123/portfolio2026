@@ -17,7 +17,7 @@ export default {
       "https://drive.google.com/file/d/1HY9olBuuxkSE6XiGjIm5fmzkCMkDU0hT/view?usp=drive_link",
 
     code: {
-      role: "Fullstack Engineer",
+      role: "Fullstack developer",
       specialty1: "Scalability",
       specialty2: "UI/UX",
       location: "Remote",

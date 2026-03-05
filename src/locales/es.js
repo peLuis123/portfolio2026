@@ -17,7 +17,7 @@ export default {
       "https://drive.google.com/file/d/1qElXiHPgeAXlPgDXhr_oEa8rYZ7S058I/view?usp=sharing",
 
     code: {
-      role: "Ingeniero Fullstack",
+      role: "Desarrollador Fullstack",
       specialty1: "Escalabilidad",
       specialty2: "UI/UX",
       location: "Remoto",
