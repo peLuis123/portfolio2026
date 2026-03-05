@@ -12,7 +12,9 @@ export default {
     description:
       "I build scalable digital solutions with a focus on high-performance backends and intuitive, modern user interfaces.",
     viewWork: "View My Work",
-    resume: "Resume.pdf",
+    resume: "Curriculum.pdf",
+    resumeUrl:
+      "https://drive.google.com/file/d/1HY9olBuuxkSE6XiGjIm5fmzkCMkDU0hT/view?usp=drive_link",
 
     code: {
       role: "Fullstack Engineer",

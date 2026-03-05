@@ -38,7 +38,7 @@ function Hero() {
             </button>
 
             <a
-              href="https://drive.google.com/file/d/10OnwoqUfPJ3VaN7NsbhrRgIV1qGvNNqW/view?usp=drive_link"
+              href={translations.hero.resumeUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-4 bg-slate-200 dark:bg-white/5 text-slate-900 dark:text-white font-bold rounded-xl hover:bg-slate-300 dark:hover:bg-white/10 transition-all"

@@ -12,7 +12,9 @@ export default {
     description:
       "Construyo soluciones digitales escalables con enfoque en backends de alto rendimiento e interfaces modernas e intuitivas.",
     viewWork: "Ver mi trabajo",
-    resume: "Currículum.pdf",
+    resume: "Hoja de Vida.pdf",
+    resumeUrl:
+      "https://drive.google.com/file/d/1qElXiHPgeAXlPgDXhr_oEa8rYZ7S058I/view?usp=sharing",
 
     code: {
       role: "Ingeniero Fullstack",
