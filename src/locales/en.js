@@ -14,7 +14,7 @@ export default {
     viewWork: "View My Work",
     resume: "Curriculum.pdf",
     resumeUrl:
-      "https://drive.google.com/file/d/1HY9olBuuxkSE6XiGjIm5fmzkCMkDU0hT/view?usp=drive_link",
+      "https://drive.google.com/file/d/1lGR0RenuhigHwoDoinKAQ7Anwa0Y6USd/view?usp=sharing",
 
     code: {
       role: "Fullstack developer",
