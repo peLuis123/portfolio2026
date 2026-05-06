@@ -55,7 +55,7 @@ function Contact() {
   };
 
   return (
-    <section className="py-24 px-6 bg-slate-100/50 dark:bg-black/20" id="contact">
+    <section className="py-24 px-6" id="contact">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold mb-4">{contact.title}</h2>
