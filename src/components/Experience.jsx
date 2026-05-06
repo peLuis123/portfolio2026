@@ -6,7 +6,7 @@ function Experience() {
   const exp = translations.experience;
 
   return (
-    <section className="py-24 px-6" id="experience">
+    <section className="py-24 px-6 bg-background-cream dark:bg-black/20" id="experience">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold mb-4">{exp.title}</h2>
