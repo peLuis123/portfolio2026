@@ -10,7 +10,7 @@ export default {
     titleMain: "Desarrollador",
     titleAccent: "Fullstack",
     description:
-      "Construyo soluciones digitales escalables con enfoque en backends de alto rendimiento e interfaces modernas e intuitivas.",
+      "Ayudo a startups y empresas a escalar productos digitales de alto impacto; hoy me especializo en Web3, fintech y pagos cripto, pero también construyo soluciones fullstack en distintos dominios.",
     viewWork: "Ver mi trabajo",
     resume: "Hoja de Vida.pdf",
     resumeUrl:
@@ -18,8 +18,9 @@ export default {
 
     code: {
       role: "Desarrollador Fullstack",
-      specialty1: "Escalabilidad",
-      specialty2: "UI/UX",
+      specialty1: "Web3",
+      specialty2: "Fintech",
+      specialty3: "Pagos Cripto",
       location: "Remoto",
     }
   },
@@ -29,91 +30,72 @@ export default {
 
     jobs: [
       {
-        date: "Ene 2023 — Abr 2023",
-        role: "Practicante Backend",
-        company: "DevITM (México)",
-        bullets: [
-          "Desarrollé APIs REST con integración de pagos Stripe usando Node.js y Express.",
-          "Documenté APIs con Swagger y reforcé fundamentos de arquitectura backend."
-        ]
-      },
-      {
-        date: "Abr 2023 — Jul 2023",
+        date: "Nov 2025 — Actualidad",
         role: "Desarrollador Backend",
-        company: "DevITM (México)",
+        company: "Coral Finance (Panamá, Remoto)",
         bullets: [
-          "Configuré servidores VPS (CentOS) y desplegué backend con NGINX + PM2.",
-          "Integré pasarela de pagos Stripe en sistema de delivery en producción."
-        ]
-      },
-      {
-        date: "Ago 2023 — Ene 2024",
-        role: "Desarrollador Fullstack",
-        company: "Justo A Tiempo (España)",
-        bullets: [
-          "Desarrollé sistema de logística en tiempo real.",
-          "Frontend: Vue.js 2 + Vuex | Backend: Node.js + Express.",
-          "Gestión de Firebase y despliegues en VPS."
-        ]
-      },
-      {
-        date: "May 2024 — Sep 2024",
-        role: "Desarrollador Fullstack (Medio Tiempo)",
-        company: "BTrazer (Panamá)",
-        bullets: [
-          "Construí plataforma de reportes con React y Express.",
-          "Mantenimiento y optimización de sistemas en producción."
-        ]
-      },
-      {
-        date: "Oct 2024 — Dic 2024",
-        role: "Desarrollador Fullstack (Freelance)",
-        company: "Plataforma de Ciberseguridad",
-        bullets: [
-          "Desarrollé plataforma de ciberseguridad (Vue 3 + Pinia, Express + MongoDB).",
-          "Diseñé flujos backend escalables integrando servicios externos.",
-          "Desarrollé backend para sistema de rastreo de dispositivos móviles."
+          "Lideré la migración de FERN hacia Conduit y Rain en 5+ semanas, integrando APIs financieras desde cero y cumpliendo el plazo.",
+          "Gestioné comunicación técnica directa con el equipo de Rain (en inglés), definiendo requisitos y coordinando integración end-to-end.",
+          "Arquitecté servicios backend en Node.js y Express para operaciones USDT/USDC sobre Solana y Polygon (EVM).",
+          "Desarrollé webhooks para eventos on-chain en tiempo real y mantuve infraestructura lean con Vercel y Supabase en equipo de 2-3 ingenieros."
         ]
       },
       {
         date: "Dic 2024 — Oct 2025",
         role: "Desarrollador Fullstack",
-        company: "Flexbit (Plataforma Cripto)",
+        company: "Flexbit (Panamá, Remoto)",
         bullets: [
-          "Desarrollé sistemas backend basados en blockchain.",
-          "Construí pasarela de pago cripto desde cero para Smart+ (México).",
-          "Integré sistema de verificación de identidad DIDIT.",
-          "Implementé flujos seguros de transacciones blockchain."
+          "Construí la pasarela de pagos cripto para Smart+ desde cero con Node.js y TronWeb, procesando entre 500 y 2,000 transacciones diarias en TRON y EVM.",
+          "Fui el punto técnico principal con el cliente Smart+, coordinando requerimientos de integración de forma autónoma.",
+          "Integré DIDIT KYC en onboarding, habilitando acceso compliant para más de 1,000 usuarios y reduciendo riesgo de fraude.",
+          "Desplegué arquitectura serverless en AWS Lambda y S3, junto con entornos VPS con NGINX y PM2; desarrollé APIs con Node.js y NestJS."
         ]
       },
       {
-        date: "Oct 2025 — Actualidad",
+        date: "May 2024 — Oct 2024",
         role: "Desarrollador Fullstack",
-        company: "Coral Finance (Plataforma Cripto & Dinero Tradicional)",
+        company: "BTrazer (Panamá, Remoto)",
         bullets: [
-          "Desarrollé sistemas de transacciones cripto ↔ dinero tradicional.",
-          "Integré infraestructura financiera: FERN, Conduit y Rain.",
-          "Implementé flujos KYC y KYB.",
-          "Desarrollé APIs backend seguras para operaciones financieras."
+          "Diseñé y entregué un dashboard administrativo desde cero en React.js para trazabilidad, visualización estadística y seguimiento de supply chain.",
+          "Refactoricé el backend legado en Node.js/Express, pasando de trazabilidad básica a plataforma completa con autenticación, tablas de datos y analítica.",
+          "Construí APIs REST con Express y MongoDB para cubrir el ciclo de vida de productos en un equipo lean de 2-3 ingenieros."
+        ]
+      },
+      {
+        date: "Ago 2023 — Ene 2024",
+        role: "Desarrollador Fullstack",
+        company: "Justo A Tiempo (España, Remoto)",
+        bullets: [
+          "Refactoricé una plataforma de logística en tiempo real para 150+ conductores y clientes finales, resolviendo bugs críticos de operaciones.",
+          "Integré Stripe y PayPal para habilitar procesamiento de pagos online dentro de la plataforma.",
+          "Desarrollé frontend con Vue.js 2 + Vuex y APIs REST con Node.js, Express y Firebase; desplegué y mantuve la solución en VPS."
+        ]
+      },
+      {
+        date: "Ene 2023 — Jul 2023",
+        role: "Desarrollador Backend",
+        company: "DevITM (México, Remoto)",
+        bullets: [
+          "Integré la pasarela Stripe en una plataforma e-commerce en producción, habilitando pagos online seguros.",
+          "Construí APIs REST con Node.js y Express usando arquitectura modular, manejo centralizado de errores y documentación Swagger.",
+          "Configuré y desplegué infraestructura backend en VPS CentOS con NGINX y PM2 en equipo de 4+ ingenieros."
         ]
       }
     ]
   },
   stack: {
     title: "Tecnologías y Experiencia",
-    subtitle: "Herramientas y tecnologías que utilizo para construir sistemas escalables.",
+    subtitle: "Stack principal con foco en arquitectura fullstack, fintech y Web3, más herramientas complementarias.",
 
     categories: [
       {
         name: "Frontend",
         items: [
           "React",
-          "Next.js",
-          "Vue 3",
-          "Pinia",
+          "Vue.js",
           "TypeScript",
-          "Tailwind CSS",
-
+          "Vite",
+          "Tailwind CSS"
         ]
       },
       {
@@ -125,26 +107,34 @@ export default {
           "MongoDB",
           "PostgreSQL",
           "Redis",
-          "Stripe API",
-          "Integración Blockchain",
-          "Flujos KYC / KYB",
-          "FERN API",
-          "Conduit API",
-          "Rain API",
-          "DIDIT"
+          "JWT",
+          "Webhooks",
+          "Socket.io"
         ]
       },
       {
         name: "DevOps e Infraestructura",
         items: [
+          "Vercel",
+          "AWS Lambda",
+          "AWS S3",
           "Docker",
-          "AWS",
           "NGINX",
           "PM2",
-          "Despliegue en VPS",
-          "Firebase",
-          "GitHub Actions",
-          "Pipelines CI/CD"
+          "Despliegue en VPS"
+        ]
+      },
+      {
+        name: "Blockchain y Web3",
+        items: [
+          "Solana",
+          "Polygon",
+          "TRON",
+          "EVM",
+          "USDT",
+          "USDC",
+          "Pasarelas de Pago Cripto",
+          "KYC/KYB"
         ]
       }
     ]
@@ -225,7 +215,7 @@ export default {
     email: "pedrorc2018@gmail.com",
 
     locationLabel: "UBICACIÓN",
-    location: "Arequipa, Perú (Remoto)",
+    location: "Remoto | Abierto a oportunidades globales",
 
     socialTitle: "Redes Sociales",
 

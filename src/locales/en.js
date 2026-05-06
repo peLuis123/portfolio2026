@@ -10,7 +10,7 @@ export default {
     titleMain: "Fullstack",
     titleAccent: "Developer",
     description:
-      "I build scalable digital solutions with a focus on high-performance backends and intuitive, modern user interfaces.",
+      "I help startups and companies scale high-impact digital products; while I currently specialize in Web3, fintech, and crypto payments, I also build fullstack solutions across multiple domains.",
     viewWork: "View My Work",
     resume: "Curriculum.pdf",
     resumeUrl:
@@ -18,8 +18,9 @@ export default {
 
     code: {
       role: "Fullstack developer",
-      specialty1: "Scalability",
-      specialty2: "UI/UX",
+      specialty1: "Web3",
+      specialty2: "Fintech",
+      specialty3: "Crypto Payments",
       location: "Remote",
     }
   },
@@ -29,91 +30,72 @@ export default {
 
     jobs: [
       {
-        date: "Jan 2023 — Apr 2023",
-        role: "Backend Developer Intern",
-        company: "DevITM (Mexico)",
-        bullets: [
-          "Developed REST APIs with Stripe payment integration using Node.js and Express.",
-          "Documented APIs using Swagger and improved backend architecture fundamentals."
-        ]
-      },
-      {
-        date: "Apr 2023 — Jul 2023",
+        date: "Nov 2025 — Present",
         role: "Backend Developer",
-        company: "DevITM (Mexico)",
+        company: "Coral Finance (Panama, Remote)",
         bullets: [
-          "Configured VPS servers (CentOS) and deployed backend using NGINX + PM2.",
-          "Integrated Stripe payment gateway into production delivery system."
-        ]
-      },
-      {
-        date: "Aug 2023 — Jan 2024",
-        role: "Fullstack Developer",
-        company: "Justo A Tiempo (Spain)",
-        bullets: [
-          "Built real-time logistics tracking system.",
-          "Frontend: Vue.js 2 + Vuex | Backend: Node.js + Express.",
-          "Managed Firebase and VPS deployments."
-        ]
-      },
-      {
-        date: "May 2024 — Sep 2024",
-        role: "Fullstack Developer (Part-Time)",
-        company: "BTrazer (Panama)",
-        bullets: [
-          "Built reporting platform using React and Express.",
-          "Maintained and optimized production systems."
-        ]
-      },
-      {
-        date: "Oct 2024 — Dec 2024",
-        role: "Fullstack Developer (Freelance)",
-        company: "Cybersecurity Platform",
-        bullets: [
-          "Developed cybersecurity platform (Vue 3 + Pinia, Express + MongoDB).",
-          "Designed scalable backend flows integrating external services.",
-          "Built backend for mobile device tracking system."
+          "Led an emergency migration from deprecated FERN to Conduit and Rain APIs over 5+ weeks, integrating financial APIs from scratch within deadline.",
+          "Owned direct technical communication with Rain engineering (in English), clarifying requirements and coordinating end-to-end integration.",
+          "Architected Node.js and Express backend services for USDT/USDC operations across Solana and Polygon (EVM).",
+          "Engineered webhook systems for real-time on-chain events and maintained lean infrastructure on Vercel and Supabase in a 2-3 engineer team."
         ]
       },
       {
         date: "Dec 2024 — Oct 2025",
         role: "Fullstack Developer",
-        company: "Flexbit (Cryptocurrency Platform)",
+        company: "Flexbit (Panama, Remote)",
         bullets: [
-          "Developed blockchain-based backend systems.",
-          "Built crypto payment gateway from scratch for Smart+ (Mexico).",
-          "Integrated DIDIT identity verification system.",
-          "Worked on secure blockchain transaction flows."
+          "Built Smart+ crypto payment gateway from scratch using Node.js and TronWeb, processing 500-2,000 daily transactions across TRON and EVM networks.",
+          "Served as the primary technical point of contact for Smart+, coordinating integration requirements independently.",
+          "Integrated DIDIT KYC into onboarding, enabling compliant access for 1,000+ users while reducing fraud registration risk.",
+          "Deployed serverless infrastructure on AWS Lambda and S3, alongside VPS environments with NGINX and PM2; built APIs with Node.js and NestJS."
         ]
       },
       {
-        date: "Oct 2025 — Present",
+        date: "May 2024 — Oct 2024",
         role: "Fullstack Developer",
-        company: "Coral Finance (Crypto & Fiat Platform)",
+        company: "BTrazer (Panama, Remote)",
         bullets: [
-          "Developed crypto ↔ fiat transaction systems.",
-          "Integrated financial infrastructure platforms: FERN, Conduit and Rain.",
-          "Implemented KYC and KYB verification flows.",
-          "Built secure backend APIs for financial transactions."
+          "Architected and shipped an admin dashboard from scratch in React.js for product traceability, statistics visualization, and supply chain tracking.",
+          "Refactored a legacy Node.js/Express backend into a full platform with auth middleware, data tables, and analytics endpoints.",
+          "Built RESTful APIs with Express and MongoDB to support end-to-end product lifecycle tracking in a lean 2-3 engineer team."
+        ]
+      },
+      {
+        date: "Aug 2023 — Jan 2024",
+        role: "Fullstack Developer",
+        company: "Justo A Tiempo (Spain, Remote)",
+        bullets: [
+          "Refactored a real-time logistics platform serving 150+ drivers and end customers, resolving critical bugs affecting operational reliability.",
+          "Integrated Stripe and PayPal into the logistics platform to support online payment processing.",
+          "Built frontend with Vue.js 2 + Vuex and RESTful APIs with Node.js, Express, and Firebase; deployed and maintained on VPS infrastructure."
+        ]
+      },
+      {
+        date: "Jan 2023 — Jul 2023",
+        role: "Backend Developer",
+        company: "DevITM (Mexico, Remote)",
+        bullets: [
+          "Integrated Stripe payment gateway into a production e-commerce platform, enabling secure online transactions.",
+          "Built RESTful APIs with Node.js and Express using modular architecture, centralized error handling, and complete Swagger documentation.",
+          "Configured and deployed backend infrastructure on CentOS VPS with NGINX and PM2 in a 4+ engineer team."
         ]
       }
     ]
   },
   stack: {
     title: "Technical Expertise",
-    subtitle: "The tools and technologies I use to build scalable systems.",
+    subtitle: "Core stack focused on fullstack architecture, fintech, and Web3, plus complementary tools.",
 
     categories: [
       {
         name: "Frontend",
         items: [
           "React",
-          "Next.js",
-          "Vue 3",
-          "Pinia",
+          "Vue.js",
           "TypeScript",
-          "Tailwind CSS",
-
+          "Vite",
+          "Tailwind CSS"
         ]
       },
       {
@@ -125,26 +107,34 @@ export default {
           "MongoDB",
           "PostgreSQL",
           "Redis",
-          "Stripe API",
-          "Blockchain Integration",
-          "KYC / KYB Flows",
-          "FERN API",
-          "Conduit API",
-          "Rain API",
-          "DIDIT"
+          "JWT",
+          "Webhooks",
+          "Socket.io"
         ]
       },
       {
         name: "DevOps & Infrastructure",
         items: [
+          "Vercel",
+          "AWS Lambda",
+          "AWS S3",
           "Docker",
-          "AWS",
           "NGINX",
           "PM2",
-          "VPS Deployment",
-          "Firebase",
-          "GitHub Actions",
-          "CI/CD Pipelines"
+          "VPS Deployment"
+        ]
+      },
+      {
+        name: "Blockchain & Web3",
+        items: [
+          "Solana",
+          "Polygon",
+          "TRON",
+          "EVM",
+          "USDT",
+          "USDC",
+          "Crypto Payment Gateways",
+          "KYC/KYB"
         ]
       }
     ]
@@ -225,7 +215,7 @@ export default {
     email: "pedrorc2018@gmail.com",
 
     locationLabel: "LOCATION",
-    location: "Arequipa, Peru (Remote)",
+    location: "Remote | Open to Worldwide Opportunities",
 
     socialTitle: "Social Connect",
 
