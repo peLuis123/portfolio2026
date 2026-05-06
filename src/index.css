@@ -3,7 +3,8 @@
 
 @theme {
   --color-primary: #2b8cee;
-  --color-background-light: #f6f7f8;
+  --color-background-light: #ffffff;
+  --color-background-cream: #f7f1e6;
   --color-background-dark: #101922;
 
   --font-display: "Space Grotesk", sans-serif;
