@@ -1,8 +1,11 @@
 import { useContext } from "react";
 import { LanguageContext } from "../context/LanguageContext";
+import resumeEs from "../assets/Pedro_Ramos_CV_Fullstack_ES.pdf";
+import resumeEn from "../assets/Pedro_Ramos_CV_Fullstack_EN.pdf";
 
 function Hero() {
-  const { translations } = useContext(LanguageContext);
+  const { translations, language } = useContext(LanguageContext);
+  const localResumeUrl = language === "es" ? resumeEs : resumeEn;
 
   return (
     <section className="pt-32 pb-20 px-6">
@@ -38,9 +41,8 @@ function Hero() {
             </button>
 
             <a
-              href={translations.hero.resumeUrl}
-              target="_blank"
-              rel="noopener noreferrer"
+              href={localResumeUrl || translations.hero.resumeUrl}
+              download={translations.hero.resume}
               className="px-8 py-4 bg-slate-200 dark:bg-white/5 text-slate-900 dark:text-white font-bold rounded-xl hover:bg-slate-300 dark:hover:bg-white/10 transition-all"
             >
               {translations.hero.resume}
@@ -94,6 +96,14 @@ function Hero() {
               <span className="text-emerald-400">
                 "{translations.hero.code.specialty2}"
               </span>
+              {translations.hero.code.specialty3 && (
+                <>
+                  ,{" "}
+                  <span className="text-emerald-400">
+                    "{translations.hero.code.specialty3}"
+                  </span>
+                </>
+              )}
               ],
             </div>
 
