@@ -14,7 +14,7 @@ function Experience() {
         </div>
 
         <div className="relative max-w-4xl mx-auto">
-          <div className="absolute left-0 md:left-1/2 md:-ml-[1px] top-0 bottom-0 w-[2px] timeline-line opacity-30"></div>
+          <div className="absolute left-0 md:left-1/2 md:-ml-px top-0 bottom-0 w-0.5 timeline-line opacity-30"></div>
 
           {exp.jobs.map((job, index) => {
             const isLeft = index % 2 === 0;
@@ -35,7 +35,7 @@ function Experience() {
                     </div>
                   )}
 
-                  <div className="absolute left-[-9px] md:left-1/2 md:-ml-[10px] w-5 h-5 rounded-full bg-primary border-4 border-background-dark z-10"></div>
+                  <div className="absolute -left-2.25 md:left-1/2 md:-ml-2.5 w-5 h-5 rounded-full bg-primary border-4 border-background-dark z-10"></div>
 
                   <div className="md:w-[45%] md:pl-8">
                     <div className="glass p-6 rounded-xl glow-hover transition-all">
