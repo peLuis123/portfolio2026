@@ -29,7 +29,7 @@ function Projects() {
   const hasLink = (url) => Boolean(url && url !== "#");
 
   return (
-    <section className="py-24 px-6" id="projects">
+    <section className="py-24 px-6 bg-background-cream dark:bg-black/20" id="projects">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
           <div>
