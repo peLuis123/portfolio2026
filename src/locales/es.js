@@ -30,7 +30,7 @@ export default {
 
     jobs: [
       {
-        date: "Nov 2025 — Actualidad",
+        date: "Nov 2025 — Jun 2026",
         role: "Desarrollador Backend",
         company: "Coral Finance (Panamá, Remoto)",
         bullets: [

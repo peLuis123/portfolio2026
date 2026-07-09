@@ -30,7 +30,7 @@ export default {
 
     jobs: [
       {
-        date: "Nov 2025 — Present",
+        date: "Nov 2025 — Jun 2026",
         role: "Backend Developer",
         company: "Coral Finance (Panama, Remote)",
         bullets: [
@@ -165,7 +165,7 @@ export default {
       },
       {
         title: "CryptoShop",
-        imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bitcoin.svg/1200px-Bitcoin.svg.png",
+        imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw94eIMOmOZhm0RuwBJZ2ERdpqR4ILmgBoRr17TdEYL5_iIlSO-Xa7dpg&s=10",
         description:
           "Fullstack crypto e-commerce with TRX payments: frontend with client/admin panels and backend with JWT, orders, on-chain confirmation, and Socket.io.",
         imageAlt: "Crypto shop interface with admin panel and payment flow",
