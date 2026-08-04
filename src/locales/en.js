@@ -1,3 +1,8 @@
+import CryptoDashImage from "../assets/CryptoDash.jpg";
+import CryptoShopImage from "../assets/CryptoShop.png";
+import StripeImage from "../assets/Stripe.jpg";
+import VideoGamesImage from "../assets/VideoGames.avif";
+
 export default {
   nav: {
     experience: "Experience",
@@ -152,7 +157,7 @@ export default {
     items: [
       {
         title: "CryptoDash",
-        imageUrl: "https://www.creativefabrica.com/wp-content/uploads/2021/02/01/Crypto-Logos-Graphics-8240065-1-1-580x387.jpg",
+        imageUrl: CryptoDashImage,
         description:
           "Frontend crypto dashboard with real-time CoinGecko data, portfolio management, interactive charts, bilingual support. Production deployed: see link below.",
         imageAlt: "CryptoDash dashboard with cryptocurrency metrics and charts",
@@ -165,7 +170,7 @@ export default {
       },
       {
         title: "CryptoShop",
-        imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw94eIMOmOZhm0RuwBJZ2ERdpqR4ILmgBoRr17TdEYL5_iIlSO-Xa7dpg&s=10",
+        imageUrl: CryptoShopImage,
         description:
           "Fullstack crypto e-commerce with TRX payments: frontend with client/admin panels and backend with JWT, orders, on-chain confirmation, and Socket.io.",
         imageAlt: "Crypto shop interface with admin panel and payment flow",
@@ -178,7 +183,7 @@ export default {
       },
       {
         title: "Stripe Payments API",
-        imageUrl: "https://miro.medium.com/v2/resize:fit:1400/1*8Izu1dIH7uyCZJpYZPyj9g.jpeg",
+        imageUrl: StripeImage,
         description:
           "Modular backend API for customers, cards, payments, refunds, and Stripe webhooks with centralized error handling and Swagger docs.",
         imageAlt: "Stripe payments API with modular architecture and documentation",
@@ -191,7 +196,7 @@ export default {
       },
       {
         title: "VideoGames Platform",
-        imageUrl: "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=1200&q=80",
+        imageUrl: VideoGamesImage,
         description:
           "Game buying and selling platform with catalog, user library, subscriptions, and payment methods, integrated with a dedicated backend.",
         imageAlt: "Video games platform with catalog and personal library",

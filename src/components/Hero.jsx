@@ -35,9 +35,17 @@ function Hero() {
               }}
             >
               {translations.hero.viewWork}
-              <span className="material-symbols-outlined">
-                arrow_downward
-              </span>
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                className="w-5 h-5"
+                aria-hidden="true"
+              >
+                <path d="M12 5v14" />
+                <path d="m6 13 6 6 6-6" />
+              </svg>
             </button>
 
             <a

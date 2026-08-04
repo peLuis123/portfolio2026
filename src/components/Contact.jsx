@@ -80,7 +80,17 @@ function Contact() {
                   href={`mailto:${contact.email}`}
                 >
                   <div className="w-12 h-12 glass rounded-xl flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all">
-                    <span className="material-symbols-outlined">mail</span>
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="1.8"
+                      className="w-6 h-6"
+                      aria-hidden="true"
+                    >
+                      <rect x="3" y="5" width="18" height="14" rx="2" />
+                      <path d="m4 7 8 6 8-6" />
+                    </svg>
                   </div>
                   <div>
                     <p className="text-xs text-slate-500 font-mono">
@@ -94,9 +104,17 @@ function Contact() {
 
                 <div className="flex items-center gap-4 group">
                   <div className="w-12 h-12 glass rounded-xl flex items-center justify-center text-emerald-400">
-                    <span className="material-symbols-outlined">
-                      location_on
-                    </span>
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="1.8"
+                      className="w-6 h-6"
+                      aria-hidden="true"
+                    >
+                      <path d="M12 21s7-4.8 7-11a7 7 0 1 0-14 0c0 6.2 7 11 7 11z" />
+                      <circle cx="12" cy="10" r="2.5" />
+                    </svg>
                   </div>
                   <div>
                     <p className="text-xs text-slate-500 font-mono">
@@ -205,9 +223,16 @@ function Contact() {
                 disabled={isSubmitting}
               >
                 {isSubmitting ? contact.form.sending : contact.form.submit}
-                <span className="material-symbols-outlined text-xl">
-                  send
-                </span>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  className="w-5 h-5"
+                  aria-hidden="true"
+                >
+                  <path d="M3 11.7 21 3 12.3 21l-1.9-7.4L3 11.7z" />
+                </svg>
               </button>
 
               {submitState === "success" && (
