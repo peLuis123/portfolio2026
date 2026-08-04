@@ -6,7 +6,7 @@ function Experience() {
   const exp = translations.experience;
 
   return (
-    <section className="py-24 px-6 bg-background-cream dark:bg-black/20" id="experience">
+    <section className="scroll-mt-24 py-20 md:py-24 px-4 sm:px-6 bg-background-cream dark:bg-black/20" id="experience">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold mb-4">{exp.title}</h2>
@@ -23,8 +23,18 @@ function Experience() {
               <div key={index} className="relative mb-16 md:mb-24">
                 <div className="md:flex items-center justify-between">
 
+                  <div className="pl-6 mb-4 md:hidden">
+                    <span className="text-primary font-mono text-sm block mb-1">
+                      {job.date}
+                    </span>
+                    <h3 className="text-2xl font-bold leading-tight">{job.role}</h3>
+                    <p className="text-slate-400 font-medium">
+                      {job.company}
+                    </p>
+                  </div>
+
                   {isLeft && (
-                    <div className="md:w-[45%] mb-4 md:mb-0 md:text-right">
+                    <div className="hidden md:block md:w-[45%] mb-4 md:mb-0 md:text-right">
                       <span className="text-primary font-mono text-sm block mb-1">
                         {job.date}
                       </span>
@@ -35,9 +45,9 @@ function Experience() {
                     </div>
                   )}
 
-                  <div className="absolute -left-2.25 md:left-1/2 md:-ml-2.5 w-5 h-5 rounded-full bg-primary border-4 border-background-dark z-10"></div>
+                  <div className="absolute left-0 -translate-x-1/2 md:left-1/2 md:-translate-x-1/2 w-5 h-5 rounded-full bg-primary border-4 border-background-dark z-10"></div>
 
-                  <div className="md:w-[45%] md:pl-8">
+                  <div className="pl-6 md:w-[45%] md:pl-8">
                     <div className="glass p-6 rounded-xl glow-hover transition-all">
                       <ul className="space-y-3 text-slate-400 text-sm list-none">
                         {job.bullets.map((bullet, i) => (
@@ -51,7 +61,7 @@ function Experience() {
                   </div>
 
                   {!isLeft && (
-                    <div className="md:w-[45%] md:text-left">
+                    <div className="hidden md:block md:w-[45%] md:text-left">
                       <span className="text-primary font-mono text-sm block mb-1">
                         {job.date}
                       </span>
