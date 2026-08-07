@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 import en from "../locales/en";
 import es from "../locales/es";
 
@@ -15,6 +15,10 @@ export const LanguageProvider = ({ children }) => {
     setLanguage(newLang);
     localStorage.setItem("lang", newLang);
   };
+
+  useEffect(() => {
+    document.documentElement.lang = language;
+  }, [language]);
 
   return (
     <LanguageContext.Provider value={{ translations, toggleLanguage, language }}>

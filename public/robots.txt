@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://luisdev21.netlify.app/sitemap.xml
