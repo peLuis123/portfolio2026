@@ -5,28 +5,28 @@ const SITE_URL = "https://luisdev21.netlify.app";
 
 const SEO_CONTENT = {
   es: {
-    title: "LuisDev | Desarrollador Fullstack",
+    title: "Pedro Ramos | Desarrollador Fullstack · Node.js y AWS",
     description:
-      "Portfolio de LuisDev, desarrollador fullstack especializado en Web3, fintech y pagos cripto. Proyectos reales, experiencia profesional y contacto directo.",
-    ogLocale: "es_ES",
+      "Pedro Luis Ramos Calla, desarrollador fullstack en Perú con más de 3 años de experiencia en Node.js, React, AWS, fintech y Web3. Disponible para trabajo remoto.",
+    ogLocale: "es_PE",
   },
   en: {
-    title: "LuisDev | Fullstack Developer",
+    title: "Pedro Ramos | Fullstack Developer · Node.js & AWS",
     description:
-      "Portfolio of LuisDev, a fullstack developer specialized in Web3, fintech, and crypto payments. Real-world projects, experience, and direct contact.",
+      "Pedro Luis Ramos Calla, fullstack developer in Peru with 3+ years of experience in Node.js, React, AWS, fintech, and Web3. Available for remote work.",
     ogLocale: "en_US",
   },
 };
 
 function updateMetaByName(name, content) {
-  const el = document.querySelector(`meta[name=\"${name}\"]`);
+  const el = document.querySelector(`meta[name="${name}"]`);
   if (el) {
     el.setAttribute("content", content);
   }
 }
 
 function updateMetaByProperty(property, content) {
-  const el = document.querySelector(`meta[property=\"${property}\"]`);
+  const el = document.querySelector(`meta[property="${property}"]`);
   if (el) {
     el.setAttribute("content", content);
   }
@@ -37,8 +37,7 @@ function Seo() {
 
   useEffect(() => {
     const current = SEO_CONTENT[language] || SEO_CONTENT.es;
-    const currentPath = window.location.pathname === "/" ? "" : window.location.pathname;
-    const absoluteUrl = `${SITE_URL}${currentPath}`;
+    const absoluteUrl = `${SITE_URL}/`;
 
     document.title = current.title;
 

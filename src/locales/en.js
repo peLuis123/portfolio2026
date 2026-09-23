@@ -12,11 +12,11 @@ export default {
     contact: "Contact Me",
   },
   hero: {
-    hello: "Hello, I'm a",
+    hello: "Hi, I'm Pedro Luis Ramos Calla",
     titleMain: "Fullstack",
     titleAccent: "Developer",
     description:
-      "I help startups and companies scale high-impact digital products; while I currently specialize in Web3, fintech, and crypto payments, I also build fullstack solutions across multiple domains.",
+      "Fullstack developer in Arequipa, Peru, with 3+ years of experience in Node.js, TypeScript, React, and Vue. I build APIs, fintech and Web3 payment systems, and AWS serverless solutions for remote teams.",
     viewWork: "View My Work",
     resume: "Curriculum.pdf",
     resumeUrl:

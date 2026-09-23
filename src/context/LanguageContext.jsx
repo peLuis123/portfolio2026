@@ -2,10 +2,12 @@ import { createContext, useEffect, useState } from "react";
 import en from "../locales/en";
 import es from "../locales/es";
 
+// Context is shared by the browser and the build-time renderer.
+// eslint-disable-next-line react-refresh/only-export-components
 export const LanguageContext = createContext();
 
 export const LanguageProvider = ({ children }) => {
-  const savedLang = localStorage.getItem("lang") || "en";
+  const savedLang = typeof window === "undefined" ? "es" : localStorage.getItem("lang") || "es";
   const [language, setLanguage] = useState(savedLang);
 
   const translations = language === "en" ? en : es;

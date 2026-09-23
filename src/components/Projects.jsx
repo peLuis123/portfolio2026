@@ -45,7 +45,7 @@ function Projects() {
           {projects.items.map((project, index) => (
             <div key={project.title} className="group glass rounded-xl overflow-hidden hover:-translate-y-2 transition-all duration-300 glow-hover">
               <div className="aspect-video relative overflow-hidden">
-                <img alt={project.imageAlt} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src={project.imageUrl} />
+                <img alt={project.imageAlt} loading="lazy" decoding="async" width="960" height="540" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src={project.imageUrl} />
                 <div className="absolute inset-0 bg-background-dark/40 group-hover:bg-background-dark/20 transition-colors"></div>
               </div>
               <div className="p-6">

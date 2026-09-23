@@ -145,7 +145,7 @@ function Contact() {
                 </a>
                 <a
                   className="w-12 h-12 glass rounded-xl flex items-center justify-center text-slate-400 hover:text-primary hover:border-primary/50 transition-all"
-                  href="https://www.linkedin.com/in/pedro-luis-ramos-calla-363b04151/"
+                  href="https://www.linkedin.com/in/pedro-ramos-fullstack/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
