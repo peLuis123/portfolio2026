@@ -1,6 +1,19 @@
 @import "tailwindcss";
 @variant dark (&:where(.dark, .dark *));
 
+/* Native cursor with the reference's white outline and blue glow. */
+@media (hover: hover) and (pointer: fine) {
+  html, body, body * {
+    cursor: url("/cursor.svg") 14 12, auto;
+  }
+  input, textarea, [contenteditable]:not([contenteditable="false"]),
+  [contenteditable]:not([contenteditable="false"]) * {
+    cursor: text;
+  }
+  select { cursor: pointer; }
+  button:disabled, [aria-disabled="true"] { cursor: not-allowed; }
+}
+
 @theme {
   --color-primary: #2b8cee;
   --color-background-light: #ffffff;
