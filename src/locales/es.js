@@ -2,6 +2,7 @@ import CryptoDashImage from "../assets/CryptoDash.jpg";
 import CryptoShopImage from "../assets/CryptoShop.png";
 import StripeImage from "../assets/Stripe.jpg";
 import VideoGamesImage from "../assets/VideoGames.avif";
+import PaymentEventsImage from "../assets/PaymentEvents.svg";
 
 export default {
   nav: {
@@ -30,120 +31,172 @@ export default {
     }
   },
   experience: {
-    title: "Experiencia Profesional",
-    subtitle: "Mi recorrido en la industria tecnológica y los hitos más importantes.",
-
-    jobs: [
-      {
-        date: "Nov 2025 — Jun 2026",
-        role: "Desarrollador Backend",
-        company: "Coral Finance (Panamá, Remoto)",
-        bullets: [
-          "Lideré la migración de FERN hacia Conduit y Rain en 5+ semanas, integrando APIs financieras desde cero y cumpliendo el plazo.",
-          "Gestioné comunicación técnica directa con el equipo de Rain (en inglés), definiendo requisitos y coordinando integración end-to-end.",
-          "Arquitecté servicios backend en Node.js y Express para operaciones USDT/USDC sobre Solana y Polygon (EVM).",
-          "Desarrollé webhooks para eventos on-chain en tiempo real y mantuve infraestructura lean con Vercel y Supabase en equipo de 2-3 ingenieros."
-        ]
-      },
-      {
-        date: "Dic 2024 — Oct 2025",
-        role: "Desarrollador Fullstack",
-        company: "Flexbit (Panamá, Remoto)",
-        bullets: [
-          "Construí la pasarela de pagos cripto para Smart+ desde cero con Node.js y TronWeb, procesando entre 500 y 2,000 transacciones diarias en TRON y EVM.",
-          "Fui el punto técnico principal con el cliente Smart+, coordinando requerimientos de integración de forma autónoma.",
-          "Integré DIDIT KYC en onboarding, habilitando acceso compliant para más de 1,000 usuarios y reduciendo riesgo de fraude.",
-          "Desplegué arquitectura serverless en AWS Lambda y S3, junto con entornos VPS con NGINX y PM2; desarrollé APIs con Node.js y NestJS."
-        ]
-      },
-      {
-        date: "May 2024 — Oct 2024",
-        role: "Desarrollador Fullstack",
-        company: "BTrazer (Panamá, Remoto)",
-        bullets: [
-          "Diseñé y entregué un dashboard administrativo desde cero en React.js para trazabilidad, visualización estadística y seguimiento de supply chain.",
-          "Refactoricé el backend legado en Node.js/Express, pasando de trazabilidad básica a plataforma completa con autenticación, tablas de datos y analítica.",
-          "Construí APIs REST con Express y MongoDB para cubrir el ciclo de vida de productos en un equipo lean de 2-3 ingenieros."
-        ]
-      },
-      {
-        date: "Ago 2023 — Ene 2024",
-        role: "Desarrollador Fullstack",
-        company: "Justo A Tiempo (España, Remoto)",
-        bullets: [
-          "Refactoricé una plataforma de logística en tiempo real para 150+ conductores y clientes finales, resolviendo bugs críticos de operaciones.",
-          "Integré Stripe y PayPal para habilitar procesamiento de pagos online dentro de la plataforma.",
-          "Desarrollé frontend con Vue.js 2 + Vuex y APIs REST con Node.js, Express y Firebase; desplegué y mantuve la solución en VPS."
-        ]
-      },
-      {
-        date: "Ene 2023 — Jul 2023",
-        role: "Desarrollador Backend",
-        company: "DevITM (México, Remoto)",
-        bullets: [
-          "Integré la pasarela Stripe en una plataforma e-commerce en producción, habilitando pagos online seguros.",
-          "Construí APIs REST con Node.js y Express usando arquitectura modular, manejo centralizado de errores y documentación Swagger.",
-          "Configuré y desplegué infraestructura backend en VPS CentOS con NGINX y PM2 en equipo de 4+ ingenieros."
-        ]
-      }
-    ]
-  },
+  "title": "Experiencia Profesional",
+  "subtitle": "Más de 3 años construyendo productos fullstack, APIs y sistemas de pagos para equipos remotos.",
+  "jobs": [
+    {
+      "date": "Ago 2026 — Sept 2026",
+      "role": "Desarrollador Fullstack",
+      "company": "Lotifyx (Perú, Remoto)",
+      "bullets": [
+        "Refactoricé el dashboard multiusuario de un marketplace con tres roles y escalé el backend de aproximadamente 3 a más de 200 usuarios simultáneos sin caídas.",
+        "Corregí una vulnerabilidad de inyección SQL mediante validación de entradas y patrones seguros de persistencia.",
+        "Migré la persistencia a PostgreSQL con TypeORM e implementé funcionalidades de marketplace, subastas y suscripciones, con Cloudflare R2 para almacenar imágenes."
+      ]
+    },
+    {
+      "date": "Nov 2025 — Jun 2026",
+      "role": "Desarrollador Backend",
+      "company": "Coral Finance (Panamá, Remoto)",
+      "bullets": [
+        "Lideré la migración de emergencia de Fern a Conduit y Rain, integrando ambas APIs desde cero en cinco semanas y evitando interrupciones en los pagos.",
+        "Desarrollé servicios Node.js, TypeScript y Express para pagos USDT/USDC, webhooks en tiempo real y monitoreo de balances con colas Redis.",
+        "Coordiné requisitos e integración end-to-end con el equipo de ingeniería de Rain en inglés técnico.",
+        "Desplegué el backend en Amazon EC2, Vercel y Supabase. Fue mi tercera colaboración consecutiva con el mismo fundador, después de BTRazer y Flexbit."
+      ]
+    },
+    {
+      "date": "Dic 2024 — Oct 2025",
+      "role": "Desarrollador Fullstack · Enfoque Backend",
+      "company": "Flexbit (Panamá, Remoto)",
+      "bullets": [
+        "Construí desde cero una pasarela de pagos cripto para Smart+ (México) con Node.js y TronWeb, procesando entre 500 y 2,000 transacciones diarias.",
+        "Diseñé una arquitectura de cuatro microservicios independientes por dominio e integré DIDIT KYC para el onboarding de más de 1,000 usuarios.",
+        "Desplegué y aseguré infraestructura en Amazon EC2 con NGINX, PM2, Certbot y firewalls.",
+        "Segunda colaboración consecutiva con el fundador de BTRazer."
+      ]
+    },
+    {
+      "date": "May 2024 — Oct 2024",
+      "role": "Desarrollador Fullstack",
+      "company": "BTRazer (Panamá, Remoto)",
+      "bullets": [
+        "Transformé un backend de trazabilidad básica en una plataforma con autenticación, gestión de datos y analítica para clientes vitivinícolas.",
+        "Diseñé la capa de datos y la lógica de negocio para preservar la trazabilidad de productos y dar visibilidad a la cadena de suministro.",
+        "Desarrollé un panel de administración en React. El fundador volvió a contratarme para sus siguientes dos proyectos: Flexbit y Coral Finance."
+      ]
+    },
+    {
+      "date": "Jul 2023 — Oct 2025",
+      "role": "Desarrollador Fullstack",
+      "company": "Justo A Tiempo (España, Remoto)",
+      "bullets": [
+        "Rediseñé las notificaciones push para más de 150 repartidores con colas Redis, eliminando pérdidas de pedidos y reduciendo los tiempos de notificación.",
+        "Implementé seguridad basada en roles e integración de Firebase para imágenes, resolviendo errores críticos de seguimiento logístico.",
+        "Desarrollé interfaces con Vue.js 2 y Vuex e integré Stripe, PayPal, Sender y Twilio mediante APIs REST con Node.js y Express sobre VPS.",
+        "Trabajé a tiempo completo y, desde mayo de 2024, compaginé el proyecto con mis roles en Panamá con acuerdo explícito entre ambas partes."
+      ]
+    },
+    {
+      "date": "Ene 2023 — Jul 2023",
+      "role": "Desarrollador Backend",
+      "company": "DevITM (México, Remoto)",
+      "bullets": [
+        "Integré Stripe y webhooks en una plataforma de logística bajo demanda para confirmar pagos de forma confiable y evitar estados inconsistentes.",
+        "Desarrollé y documenté APIs REST con Node.js, Express y Swagger para facilitar integraciones de terceros.",
+        "Comencé con un periodo de prácticas y continué como desarrollador backend."
+      ]
+    }
+  ]
+},
   stack: {
-    title: "Tecnologías y Experiencia",
-    subtitle: "Stack principal con foco en arquitectura fullstack, fintech y Web3, más herramientas complementarias.",
-
-    categories: [
-      {
-        name: "Frontend",
-        items: [
-          "React",
-          "Vue.js",
-          "TypeScript",
-          "Vite",
-          "Tailwind CSS"
-        ]
-      },
-      {
-        name: "Backend",
-        items: [
-          "Node.js",
-          "Express",
-          "NestJS",
-          "MongoDB",
-          "PostgreSQL",
-          "Redis",
-          "JWT",
-          "Webhooks",
-          "Socket.io"
-        ]
-      },
-      {
-        name: "DevOps e Infraestructura",
-        items: [
-          "Vercel",
-          "AWS Lambda",
-          "AWS S3",
-          "Docker",
-          "NGINX",
-          "PM2",
-          "Despliegue en VPS"
-        ]
-      },
-      {
-        name: "Blockchain y Web3",
-        items: [
-          "Solana",
-          "Polygon",
-          "TRON",
-          "EVM",
-          "USDT",
-          "USDC",
-          "Pasarelas de Pago Cripto",
-          "KYC/KYB"
-        ]
-      }
-    ]
-  },
+  "title": "Tecnologías y Experiencia",
+  "subtitle": "Fullstack, pagos y Web3, con experiencia en AWS y arquitectura serverless basada en eventos aplicada en mi proyecto Payment Events.",
+  "categories": [
+    {
+      "id": "frontend",
+      "name": "Frontend",
+      "items": [
+        "React.js",
+        "Vue.js 2/3",
+        "Vuex",
+        "TypeScript",
+        "Tailwind CSS",
+        "Material UI",
+        "Vuetify",
+        "Vite"
+      ]
+    },
+    {
+      "id": "backend",
+      "name": "Backend y Arquitectura",
+      "items": [
+        "Node.js",
+        "Express.js",
+        "NestJS",
+        "TypeScript",
+        "REST APIs",
+        "Microservices",
+        "Webhooks",
+        "JWT",
+        "Socket.io",
+        "Jest"
+      ]
+    },
+    {
+      "id": "cloud",
+      "name": "AWS y Cloud",
+      "items": [
+        "AWS Lambda",
+        "Lambda Function URLs",
+        "Amazon SQS",
+        "Amazon SNS",
+        "DynamoDB",
+        "IAM",
+        "CloudWatch",
+        "Serverless Framework",
+        "Amazon EC2"
+      ]
+    },
+    {
+      "id": "database",
+      "name": "Bases de Datos",
+      "items": [
+        "PostgreSQL",
+        "MySQL",
+        "MongoDB",
+        "Redis",
+        "TypeORM",
+        "Supabase",
+        "Firebase"
+      ]
+    },
+    {
+      "id": "devops",
+      "name": "DevOps y Herramientas",
+      "items": [
+        "GitHub Actions (CI/CD)",
+        "Vercel",
+        "NGINX",
+        "PM2",
+        "Certbot",
+        "VPS",
+        "Cloudflare R2",
+        "Swagger"
+      ]
+    },
+    {
+      "id": "payments",
+      "name": "Pagos y Web3",
+      "items": [
+        "Stripe",
+        "PayPal",
+        "Conduit",
+        "Rain API",
+        "DIDIT KYC",
+        "Web3.js",
+        "Ethers.js",
+        "TronWeb",
+        "Solana",
+        "Polygon",
+        "TRON",
+        "EVM",
+        "USDT",
+        "USDC"
+      ]
+    }
+  ]
+},
   projects: {
     title: "Proyectos Destacados",
     subtitle: "Aplicaciones reales enfocadas en producto, rendimiento y escalabilidad.",
@@ -155,6 +208,15 @@ export default {
     backendDocsLabel: "Docs Backend",
     demoLabel: "Demo",
     items: [
+      {
+        title: "Payment Events",
+        backendUrl: "https://github.com/peLuis123/payment-events-microservices",
+        imageUrl: PaymentEventsImage,
+        description: "Backend de pagos y e-commerce con cuatro microservicios Node.js en AWS Lambda. Procesamiento asíncrono con SQS y SNS, persistencia en DynamoDB e integración de Stripe y PayPal con webhooks, idempotencia y reembolsos.",
+        imageAlt: "Payment Events: backend serverless con AWS Lambda, SQS, SNS y DynamoDB",
+        tags: ["Backend", "AWS", "Serverless"],
+        showFullDescription: true,
+      },
       {
         title: "CryptoDash",
         imageUrl: CryptoDashImage,

@@ -49,7 +49,7 @@ function Projects() {
                 <div className="absolute inset-0 bg-background-dark/40 group-hover:bg-background-dark/20 transition-colors"></div>
               </div>
               <div className="p-6">
-                <div className="flex gap-2 mb-4">
+                <div className="flex flex-wrap gap-2 mb-4">
                   {project.tags.map((tag, tagIndex) => (
                     <span
                       key={`${project.title}-${tag}`}
@@ -60,7 +60,7 @@ function Projects() {
                   ))}
                 </div>
                 <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-                <p className="text-slate-400 text-sm mb-6 line-clamp-2">{project.description}</p>
+                <p className={`text-slate-400 text-sm mb-6 ${project.showFullDescription ? "" : "line-clamp-2"}`}>{project.description}</p>
                 <div className="flex items-center gap-4 flex-wrap">
                   {hasLink(project.frontendUrl) && (
                     <a className="flex items-center gap-1.5 text-sm font-medium hover:text-primary transition-colors" {...getLinkProps(project.frontendUrl)}>
