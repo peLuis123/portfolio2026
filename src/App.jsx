@@ -6,12 +6,14 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Seo from "./components/Seo";
+import ThemePicker from "./components/ThemePicker";
 
 function App() {
   return (
     <div className="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display transition-colors duration-300">
       <Navbar />
       <Seo />
+      <ThemePicker />
       <main>
         <Hero />
         <Experience />

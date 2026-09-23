@@ -1,33 +1,23 @@
 import { createContext, useEffect, useState } from "react";
-
 const ThemeContext = createContext();
-
 export function ThemeProvider({ children }) {
-  const [theme, setTheme] = useState(() => {
-    return typeof window === "undefined" ? "dark" : localStorage.getItem("theme") || "dark";
-  });
-
-  useEffect(() => {
-    const root = document.documentElement;
-
-    if (theme === "dark") {
-      root.classList.add("dark");
-    } else {
-      root.classList.remove("dark");
-    }
-
-    localStorage.setItem("theme", theme);
-  }, [theme]);
-
-  const toggleTheme = () => {
-    setTheme(prev => (prev === "dark" ? "light" : "dark"));
-  };
-
-  return (
-    <ThemeContext.Provider value={{ theme, toggleTheme }}>
-      {children}
-    </ThemeContext.Provider>
-  );
+ const [theme,setTheme]=useState(()=>{
+  if(typeof window==="undefined") return "cloud";
+  try { const saved=localStorage.getItem("palette");return ["cyber","violet","cloud","gold","ruby"].includes(saved)?saved:"cloud"; } catch {return "cloud";}
+ });
+ const [panelOpen,setPanelOpen]=useState(false);
+ const [mode,setMode]=useState(()=>{
+  if(typeof window==="undefined") return "light";
+  try { return localStorage.getItem("theme-mode")==="dark" ? "dark" : "light"; } catch {return "light";}
+ });
+ useEffect(()=>{
+  document.documentElement.classList.toggle("dark",mode==="dark");
+  document.documentElement.dataset.mode=mode;
+  document.documentElement.dataset.palette=theme;
+  try {localStorage.setItem("palette",theme);localStorage.setItem("theme-mode",mode);} catch { /* Optional persistence. */ }
+ },[theme,mode]);
+ const toggleTheme=()=>setPanelOpen(true);
+ return <ThemeContext.Provider value={{theme,setTheme,mode,setMode,panelOpen,setPanelOpen,toggleTheme}}>{children}</ThemeContext.Provider>;
 }
-
 export default ThemeContext;
+

@@ -4,7 +4,7 @@ import ThemeContext from "../context/ThemeContext";
 
 function Navbar() {
   const { translations, toggleLanguage, language } = useContext(LanguageContext);
-  const { theme, toggleTheme } = useContext(ThemeContext);
+  const { toggleTheme } = useContext(ThemeContext);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks = [
@@ -67,40 +67,11 @@ function Navbar() {
             </button>
 
             <button
+              aria-label={language === "es" ? "Elegir tema" : "Choose theme"}
               onClick={toggleTheme}
               className="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-white/10 transition-colors text-slate-500 dark:text-slate-400 hover:text-primary"
             >
-              {theme === "dark" ? (
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1.8"
-                  className="w-5 h-5"
-                  aria-hidden="true"
-                >
-                  <circle cx="12" cy="12" r="4" />
-                  <path d="M12 2v2.2" />
-                  <path d="M12 19.8V22" />
-                  <path d="M4.9 4.9l1.6 1.6" />
-                  <path d="M17.5 17.5l1.6 1.6" />
-                  <path d="M2 12h2.2" />
-                  <path d="M19.8 12H22" />
-                  <path d="M4.9 19.1l1.6-1.6" />
-                  <path d="M17.5 6.5l1.6-1.6" />
-                </svg>
-              ) : (
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1.8"
-                  className="w-5 h-5"
-                  aria-hidden="true"
-                >
-                  <path d="M21 12.7A8.5 8.5 0 1 1 11.3 3a6.8 6.8 0 0 0 9.7 9.7z" />
-                </svg>
-              )}
+              <span aria-hidden="true" className="text-xl">◉</span>
             </button>
           </div>
         </div>
@@ -186,43 +157,14 @@ function Navbar() {
             </button>
 
             <button
+              aria-label={language === "es" ? "Elegir tema" : "Choose theme"}
               onClick={() => {
                 toggleTheme();
                 closeMenu();
               }}
               className="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-white/10 transition-colors text-slate-500 dark:text-slate-400 hover:text-primary"
             >
-              {theme === "dark" ? (
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1.8"
-                  className="w-5 h-5"
-                  aria-hidden="true"
-                >
-                  <circle cx="12" cy="12" r="4" />
-                  <path d="M12 2v2.2" />
-                  <path d="M12 19.8V22" />
-                  <path d="M4.9 4.9l1.6 1.6" />
-                  <path d="M17.5 17.5l1.6 1.6" />
-                  <path d="M2 12h2.2" />
-                  <path d="M19.8 12H22" />
-                  <path d="M4.9 19.1l1.6-1.6" />
-                  <path d="M17.5 6.5l1.6-1.6" />
-                </svg>
-              ) : (
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1.8"
-                  className="w-5 h-5"
-                  aria-hidden="true"
-                >
-                  <path d="M21 12.7A8.5 8.5 0 1 1 11.3 3a6.8 6.8 0 0 0 9.7 9.7z" />
-                </svg>
-              )}
+              <span aria-hidden="true" className="text-xl">◉</span>
             </button>
           </div>
         </div>
