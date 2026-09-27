@@ -9,13 +9,13 @@ function Hero() {
 
   return (
     <section className="pt-32 pb-20 px-6">
-      <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+      <div className="hero-layout max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
         <div>
           <h2 className="text-primary font-mono mb-4 text-lg">
             {translations.hero.hello}
           </h2>
 
-          <h1 className="text-5xl lg:text-7xl font-bold leading-tight mb-6">
+          <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold leading-tight mb-6">
             {translations.hero.titleMain} <br />
             <span className="text-transparent bg-clip-text code-gradient">
               {translations.hero.titleAccent}
@@ -58,17 +58,17 @@ function Hero() {
           </div>
         </div>
 
-        <div className="glass rounded-xl overflow-hidden shadow-2xl border border-white/10">
+        <div className="developer-window glass rounded-xl overflow-hidden shadow-2xl border border-white/10">
           <div className="bg-white/5 px-4 py-3 border-b border-white/10 flex items-center gap-2">
             <div className="w-3 h-3 rounded-full bg-red-500/50"></div>
             <div className="w-3 h-3 rounded-full bg-yellow-500/50"></div>
             <div className="w-3 h-3 rounded-full bg-green-500/50"></div>
             <span className="ml-4 text-xs font-mono text-slate-500">
-              developer.json — 120×40
+              developer.js
             </span>
           </div>
 
-          <div className="p-8 font-mono text-sm leading-relaxed text-slate-300">
+          <div className="developer-code p-5 sm:p-8 font-mono text-sm leading-relaxed text-slate-300 break-words">
             <div className="mb-2">
               <span className="text-purple-400">const</span>{" "}
               <span className="text-primary">developer</span> = {"{"}
@@ -92,44 +92,28 @@ function Hero() {
               </span>,
             </div>
 
-            <div className="ml-6 mb-2">
-              <span className="text-slate-500 dark:text-slate-300">
-                specialty:
-              </span>{" "}
-              [
-              <span className="text-emerald-400">
-                "{translations.hero.code.specialty1}"
-              </span>
-              ,{" "}
-              <span className="text-emerald-400">
-                "{translations.hero.code.specialty2}"
-              </span>
-              {translations.hero.code.specialty3 && (
-                <>
-                  ,{" "}
-                  <span className="text-emerald-400">
-                    "{translations.hero.code.specialty3}"
-                  </span>
-                </>
-              )}
-              ],
-            </div>
-
-            <div className="ml-6 mb-2">
-              <span className="text-slate-500 dark:text-slate-300">
-                coffee_addict:
-              </span>{" "}
-              <span className="text-orange-400">true</span>,
-            </div>
-
-            <div className="ml-6 mb-2">
-              <span className="text-slate-500 dark:text-slate-300">
-                location:
-              </span>{" "}
-              <span className="text-emerald-400">
-                "{translations.hero.code.location}"
-              </span>,
-            </div>
+            {[
+              ["stack", ["TypeScript", "Node.js", "React", "Vue"]],
+              ["focus", translations.hero.code.focus],
+              ["location", translations.hero.code.location],
+              ["work_mode", translations.hero.code.workMode],
+            ].map(([key, value]) => (
+              <div key={key} className="ml-6 mb-2">
+                <span className="text-slate-500 dark:text-slate-300">{key}:</span>{" "}
+                {Array.isArray(value) ? (
+                  <>
+                    {"["}
+                    {value.map((item, index) => (
+                      <span key={item}>
+                        {index > 0 && ", "}
+                        <span className="text-emerald-400">{JSON.stringify(item)}</span>
+                      </span>
+                    ))}
+                    {"]"}
+                  </>
+                ) : <span className="text-emerald-400">{JSON.stringify(value)}</span>},
+              </div>
+            ))}
 
             <div className="ml-6 mb-2">
               <span className="text-slate-500 dark:text-slate-300">
@@ -139,7 +123,7 @@ function Hero() {
             </div>
 
             <div>{"}"};</div>
-            <div className="mt-4 animate-pulse">
+            <div className="developer-prompt mt-4" aria-hidden="true">
               <span className="text-primary">➜</span>{" "}
               <span className="text-slate-400">|</span>
             </div>
@@ -151,3 +135,4 @@ function Hero() {
 }
 
 export default Hero;
+

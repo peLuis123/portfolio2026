@@ -27,10 +27,9 @@ export default {
 
     code: {
       role: "Desarrollador Fullstack",
-      specialty1: "Web3",
-      specialty2: "Fintech",
-      specialty3: "Pagos Cripto",
-      location: "Remoto",
+      focus: ["APIs", "Sistemas de pagos", "AWS Serverless"],
+      location: "Arequipa, Perú",
+      workMode: ["Remoto", "Híbrido en Perú"],
     }
   },
   experience: {

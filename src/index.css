@@ -150,3 +150,23 @@ html {background:var(--color-background-dark);color-scheme:dark}
 .project-modal-content {padding:24px}
 .project-card:focus-visible {outline:2px solid var(--color-primary);outline-offset:2px}
 @media(max-width:639px) {.project-modal-header,.project-modal-content {padding:18px}}
+
+.hero-layout > * {min-width:0}
+.developer-window {animation:developer-enter .7s cubic-bezier(.2,.7,.3,1) both;transition:border-color .3s,box-shadow .3s}
+.developer-window:hover {border-color:color-mix(in srgb,var(--color-primary) 45%,transparent);box-shadow:0 16px 48px color-mix(in srgb,var(--color-primary) 12%,transparent)}
+.developer-code {overflow-wrap:anywhere}
+.developer-code > div {animation:developer-line .5s ease both}
+.developer-code > div:nth-child(1) {animation-delay:.1s}
+.developer-code > div:nth-child(2) {animation-delay:.2s}
+.developer-code > div:nth-child(3) {animation-delay:.3s}
+.developer-code > div:nth-child(4) {animation-delay:.4s}
+.developer-code > div:nth-child(5) {animation-delay:.5s}
+.developer-code > div:nth-child(6) {animation-delay:.6s}
+.developer-code > div:nth-child(7) {animation-delay:.7s}
+.developer-code > div:nth-child(8) {animation-delay:.8s}
+.developer-code > div:nth-child(9) {animation-delay:.9s}
+.developer-prompt span:last-child {animation:developer-caret 1.2s steps(2,end) 5}
+@keyframes developer-enter {from {opacity:0;transform:translateY(14px)} to {opacity:1;transform:translateY(0)}}
+@keyframes developer-line {from {opacity:0;transform:translateX(-6px)} to {opacity:1;transform:translateX(0)}}
+@keyframes developer-caret {50% {opacity:0}}
+@media(prefers-reduced-motion:reduce) {.developer-window,.developer-code > div,.developer-prompt span:last-child {animation:none;transition:none}}

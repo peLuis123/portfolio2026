@@ -27,7 +27,7 @@ function Navbar() {
           </span>
         </div>
 
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden lg:flex items-center gap-8">
           {navLinks.map((link) => (
             <a
               key={link.href}
@@ -78,9 +78,9 @@ function Navbar() {
 
         <button
           type="button"
-          className="md:hidden p-2 rounded-full hover:bg-slate-100 dark:hover:bg-white/10 transition-colors"
+          className="lg:hidden p-2 rounded-full hover:bg-slate-100 dark:hover:bg-white/10 transition-colors"
           onClick={() => setIsMenuOpen((prev) => !prev)}
-          aria-label="Toggle navigation menu"
+          aria-label={language === "es" ? "Abrir o cerrar menú" : "Toggle navigation menu"} aria-expanded={isMenuOpen}
         >
           {isMenuOpen ? (
             <svg
@@ -112,7 +112,7 @@ function Navbar() {
       </div>
 
       {isMenuOpen && (
-        <div className="md:hidden border-t border-slate-200/70 dark:border-white/10 bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-md px-4 sm:px-6 py-4 space-y-3">
+        <div className="lg:hidden border-t border-slate-200/70 dark:border-white/10 bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-md px-4 sm:px-6 py-4 space-y-3">
           {navLinks.map((link) => (
             <a
               key={link.href}
@@ -174,3 +174,4 @@ function Navbar() {
 }
 
 export default Navbar;
+
