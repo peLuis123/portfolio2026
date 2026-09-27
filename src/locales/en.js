@@ -1,3 +1,6 @@
+import VitaliaImage from "../assets/Vitalia.png";
+import AmbarCafeImage from "../assets/AmbarCafe.png";
+import NexoOrbitImage from "../assets/NexoOrbit.png";
 import CryptoDashImage from "../assets/CryptoDash.jpg";
 import CryptoShopImage from "../assets/CryptoShop.png";
 import StripeImage from "../assets/Stripe.jpg";
@@ -198,16 +201,67 @@ export default {
   ]
 },
   projects: {
+    detailsLabel: "View project",
+    closeLabel: "Close project",
+    productionLabel: "Production",
+
+    browseHint: "Swipe to explore the projects",
+    previousLabel: "Previous project",
+    nextLabel: "Next project",
+
     title: "Featured Projects",
     subtitle: "Real-world applications focused on product quality, performance and scalability.",
     viewAll: "View all projects",
     viewAllUrl: "https://github.com/peLuis123",
+    codeLabel: "View code",
     frontendLabel: "Frontend",
     backendLabel: "Backend",
     frontendDocsLabel: "Frontend Docs",
     backendDocsLabel: "Backend Docs",
     demoLabel: "Demo",
     items: [
+      {
+        "title": "Vitalia",
+        "description": "Health and wellness landing page with filterable services, articles and demo bookings. Reusable components, local images and responsive design.",
+        "imageAlt": "Homepage preview of Vitalia",
+        "tags": [
+          "React",
+          "React Router",
+          "Landing"
+        ],
+        "codeUrl": "https://github.com/peLuis123/vitalia",
+        "demoUrl": "https://vitalia-salud.netlify.app/",
+        "showFullDescription": true,
+        "imageUrl": VitaliaImage
+      },
+      {
+        "title": "Ámbar Café",
+        "description": "Café landing page with a filterable menu, gallery and demo bookings. Standalone components, reactive forms and routing with a custom 404 page.",
+        "imageAlt": "Homepage preview of Ámbar Café",
+        "tags": [
+          "Angular",
+          "TypeScript",
+          "Landing"
+        ],
+        "codeUrl": "https://github.com/peLuis123/ambar-cafe",
+        "demoUrl": "https://ambar-cafe.netlify.app/",
+        "showFullDescription": true,
+        "imageUrl": AmbarCafeImage
+      },
+      {
+        "title": "Nexo Orbit",
+        "description": "Web3 landing page with animated illustrations and an interactive demo simulator. Reusable components, responsive design and tested simulator logic.",
+        "imageAlt": "Homepage preview of Nexo Orbit",
+        "tags": [
+          "Vue",
+          "Vue Router",
+          "Web3"
+        ],
+        "codeUrl": "https://github.com/peLuis123/nexo-orbit",
+        "demoUrl": "https://nexo-orbit.netlify.app/",
+        "showFullDescription": true,
+        "imageUrl": NexoOrbitImage
+      },
       {
         title: "Payment Events",
         backendUrl: "https://github.com/peLuis123/payment-events-microservices",

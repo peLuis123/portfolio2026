@@ -128,3 +128,25 @@ html {background:var(--color-background-dark);color-scheme:dark}
 [data-mode="light"] .text-blue-400 {color:#236cac}
 [data-mode="light"] .text-red-400 {color:#ba3544}
 [data-mode="light"] .border-white\/10 {border-color:var(--palette-border)}
+
+.project-controls {display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:16px}
+.project-arrow {width:40px;height:40px;border:1px solid var(--palette-border);border-radius:50%;background:var(--palette-card);color:var(--color-primary);font-size:22px;transition:background .2s,opacity .2s}
+.project-arrow:hover:not(:disabled) {background:color-mix(in srgb,var(--color-primary) 12%,var(--palette-card))}
+.project-arrow:disabled {opacity:.3}
+.project-track {display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-inline:2px;padding:4px 2px 20px;scrollbar-width:thin;scrollbar-color:var(--color-primary) transparent}
+.project-card {flex:0 0 calc((100% - 40px)/3);min-width:0;display:flex;flex-direction:column;scroll-snap-align:start;transition:border-color .2s}
+.project-card:hover {border-color:var(--color-primary)}
+.project-card .aspect-video {aspect-ratio:2/1}
+.project-track:focus-visible,.project-arrow:focus-visible {outline:2px solid var(--color-primary);outline-offset:4px}
+@media(max-width:1023px) {.project-card {flex-basis:calc((100% - 20px)/2.15)}}
+@media(max-width:639px) {.project-card {flex-basis:88%}.project-controls>span {max-width:65%}}
+@media(prefers-reduced-motion:reduce) {.project-card,.project-card img,.project-arrow {transition:none}}
+
+.project-modal {margin:auto;width:min(720px,calc(100% - 32px));max-height:88dvh;overflow-y:auto;padding:0;border:1px solid var(--palette-border);border-radius:20px;background:var(--palette-card);color:var(--palette-ink);box-shadow:0 24px 100px #0006}
+.project-modal::backdrop {background:#07111dcc;backdrop-filter:blur(6px)}
+.project-modal-header {display:flex;align-items:center;justify-content:space-between;gap:16px;padding:20px 24px;position:sticky;top:0;background:var(--palette-card);z-index:1;border-bottom:1px solid var(--palette-border)}
+.project-modal-header button {flex-shrink:0}
+.project-modal-image {width:100%;max-height:360px;object-fit:contain;background:var(--color-background-cream)}
+.project-modal-content {padding:24px}
+.project-card:focus-visible {outline:2px solid var(--color-primary);outline-offset:2px}
+@media(max-width:639px) {.project-modal-header,.project-modal-content {padding:18px}}
