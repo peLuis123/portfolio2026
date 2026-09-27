@@ -20,10 +20,10 @@ function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
         <div className="flex items-center gap-2 min-w-0">
           <div className="w-8 h-8 bg-primary rounded flex items-center justify-center font-bold text-white shrink-0">
-            LD
+            PR
           </div>
           <span className="text-lg sm:text-xl font-bold tracking-tight whitespace-nowrap">
-            Luis<span className="text-primary">Dev</span>
+            Pedro <span className="text-primary">Ramos</span>
           </span>
         </div>
 

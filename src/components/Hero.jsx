@@ -50,11 +50,12 @@ function Hero() {
 
             <a
               href={localResumeUrl || translations.hero.resumeUrl}
-              download={translations.hero.resume}
+              download={`Pedro_Ramos_CV_${language.toUpperCase()}.pdf`}
               className="px-8 py-4 bg-slate-200 dark:bg-white/5 text-slate-900 dark:text-white font-bold rounded-xl hover:bg-slate-300 dark:hover:bg-white/10 transition-all"
             >
               {translations.hero.resume}
             </a>
+            <a href="https://www.linkedin.com/in/pedro-ramos-fullstack/" target="_blank" rel="noopener noreferrer" className="px-3 py-4 text-primary font-semibold hover:underline">LinkedIn ↗</a>
           </div>
         </div>
 
@@ -129,6 +130,14 @@ function Hero() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="max-w-7xl mx-auto mt-12 grid md:grid-cols-3 gap-5">
+        {translations.hero.highlights.map(([title, detail]) => (
+          <div key={title} className="border-l-2 border-primary/40 pl-4">
+            <h2 className="font-semibold mb-2">{title}</h2>
+            <p className="text-sm text-slate-500 leading-relaxed">{detail}</p>
+          </div>
+        ))}
       </div>
     </section>
   );

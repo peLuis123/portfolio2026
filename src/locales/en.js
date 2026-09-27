@@ -15,13 +15,14 @@ export default {
     contact: "Contact Me",
   },
   hero: {
+    highlights: [["Production payments", "Integrations and webhooks in fintech and logistics projects."], ["Migration in five weeks", "Conduit and Rain integration at Coral Finance."], ["Three consecutive collaborations", "BTRazer, Flexbit and Coral Finance with the same founder."]],
     hello: "Hi, I'm Pedro Luis Ramos Calla",
     titleMain: "Fullstack",
     titleAccent: "Developer",
     description:
       "Fullstack developer in Arequipa, Peru, with 3+ years of experience in Node.js, TypeScript, React, and Vue. I build APIs, fintech and Web3 payment systems, and AWS serverless solutions for remote teams.",
     viewWork: "View My Work",
-    resume: "Curriculum.pdf",
+    resume: "Download CV",
     resumeUrl:
       "https://drive.google.com/file/d/1lGR0RenuhigHwoDoinKAQ7Anwa0Y6USd/view?usp=sharing",
 
@@ -200,6 +201,7 @@ export default {
   ]
 },
   projects: {
+    caseLabels: ["Goal", "Implementation", "Functional outcome"],
     detailsLabel: "View project",
     closeLabel: "Close project",
     productionLabel: "Production",
@@ -209,7 +211,7 @@ export default {
     nextLabel: "Next project",
 
     title: "Featured Projects",
-    subtitle: "Real-world applications focused on product quality, performance and scalability.",
+    subtitle: "Personal projects and technical demos: backend, payments, AWS and web interfaces.",
     viewAll: "View all projects",
     viewAllUrl: "https://github.com/peLuis123",
     codeLabel: "View code",
@@ -220,6 +222,75 @@ export default {
     demoLabel: "Demo",
     items: [
       {
+        caseStudy: ["Process payments and e-commerce events through decoupled services.", "Four Node.js microservices on AWS Lambda, SQS/SNS queues and DynamoDB persistence.", "Implements webhooks, idempotency and refunds with Stripe and PayPal."],
+        projectType: "Personal project",
+        title: "Payment Events",
+        backendUrl: "https://github.com/peLuis123/payment-events-microservices",
+        imageUrl: PaymentEventsImage,
+        description: "Payments and e-commerce backend with four Node.js microservices on AWS Lambda. Asynchronous processing with SQS and SNS, DynamoDB persistence, and Stripe and PayPal integration with webhooks, idempotency, and refunds.",
+        imageAlt: "Payment Events: serverless backend with AWS Lambda, SQS, SNS, and DynamoDB",
+        tags: ["Backend", "AWS", "Serverless"],
+        showFullDescription: true,
+      },
+      {
+        caseStudy: ["Integrate a storefront and its TRX payment flow.", "Customer/admin frontend and backend with JWT, orders and on-chain confirmation.", "Combines the purchase flow with real-time updates through Socket.io."],
+        projectType: "Personal project",
+        title: "CryptoShop",
+        imageUrl: CryptoShopImage,
+        description:
+          "Fullstack crypto e-commerce with TRX payments: frontend with client/admin panels and backend with JWT, orders, on-chain confirmation, and Socket.io.",
+        imageAlt: "Crypto shop interface with admin panel and payment flow",
+        tags: ["Fullstack", "TRX"],
+        frontendUrl: "https://github.com/peLuis123/crypto-shop-frontend",
+        backendUrl: "https://github.com/peLuis123/crypto-shop-backend",
+        frontendDocsUrl: "https://peluis123-crypto-shop-frontend.mintlify.app/introduction",
+        backendDocsUrl: "https://peluis123-crypto-shop-backend-30.mintlify.app/introduction",
+        demoUrl: "https://drive.google.com/file/d/18ktZ2Pm8QbadIrVFiQN-wAr-Vg8Ox6r3/view?usp=drive_link"
+      },
+      {
+        caseStudy: ["Present crypto data and manage a portfolio through a clear interface.", "CoinGecko integration, interactive charts and bilingual support.", "Live web demo to explore the dashboard and its features."],
+        projectType: "Personal project",
+        title: "CryptoDash",
+        imageUrl: CryptoDashImage,
+        description:
+          "Frontend crypto dashboard with real-time CoinGecko data, portfolio management, interactive charts, bilingual support. Production deployed: see link below.",
+        imageAlt: "CryptoDash dashboard with cryptocurrency metrics and charts",
+        tags: ["Frontend", "Crypto"],
+        frontendUrl: "https://github.com/peLuis123/cryptodash",
+        frontendDocsUrl: "https://peluis123-cryptodash.mintlify.app/",
+        backendUrl: "#",
+        demoUrl: "https://drive.google.com/file/d/16CMr6bE1UkZ6aC2UllK3Y5YesHRiFUyp/view?usp=drive_link",
+        productionUrl: "https://crypto-dashx.netlify.app/"
+      },
+      {
+        projectType: "Personal project",
+        title: "Stripe Payments API",
+        imageUrl: StripeImage,
+        description:
+          "Modular backend API for customers, cards, payments, refunds, and Stripe webhooks with centralized error handling and Swagger docs.",
+        imageAlt: "Stripe payments API with modular architecture and documentation",
+        tags: ["Backend", "Stripe"],
+        frontendUrl: "#",
+        backendUrl: "https://github.com/peLuis123/Stripe_Back",
+        backendDocsUrl: "https://peluis123-stripe_back.mintlify.app/",
+        demoUrl: "https://drive.google.com/file/d/1JQcI4XQjLq5J7WLIwTStIVUmhA2fM0GT/view?usp=drive_link",
+        productionUrl: "https://api-stripe.onrender.com/doc/"
+      },
+      {
+        projectType: "Personal project",
+        title: "VideoGames Platform",
+        imageUrl: VideoGamesImage,
+        description:
+          "Game buying and selling platform with catalog, user library, subscriptions, and payment methods, integrated with a dedicated backend.",
+        imageAlt: "Video games platform with catalog and personal library",
+        tags: ["Fullstack", "Gaming"],
+        frontendUrl: "https://github.com/peLuis123/videogames",
+        backendUrl: "https://github.com/peLuis123/albun-backend",
+        backendDocsUrl: "https://peluis123-albun-backend.mintlify.app/introduction",
+        demoUrl: "#"
+      },
+      {
+        projectType: "Concept demo",
         "title": "Vitalia",
         "description": "Health and wellness landing page with filterable services, articles and demo bookings. Reusable components, local images and responsive design.",
         "imageAlt": "Homepage preview of Vitalia",
@@ -234,6 +305,7 @@ export default {
         "imageUrl": VitaliaImage
       },
       {
+        projectType: "Concept demo",
         "title": "Ámbar Café",
         "description": "Café landing page with a filterable menu, gallery and demo bookings. Standalone components, reactive forms and routing with a custom 404 page.",
         "imageAlt": "Homepage preview of Ámbar Café",
@@ -248,6 +320,7 @@ export default {
         "imageUrl": AmbarCafeImage
       },
       {
+        projectType: "Concept demo",
         "title": "Nexo Orbit",
         "description": "Web3 landing page with animated illustrations and an interactive demo simulator. Reusable components, responsive design and tested simulator logic.",
         "imageAlt": "Homepage preview of Nexo Orbit",
@@ -260,66 +333,6 @@ export default {
         "demoUrl": "https://nexo-orbit.netlify.app/",
         "showFullDescription": true,
         "imageUrl": NexoOrbitImage
-      },
-      {
-        title: "Payment Events",
-        backendUrl: "https://github.com/peLuis123/payment-events-microservices",
-        imageUrl: PaymentEventsImage,
-        description: "Payments and e-commerce backend with four Node.js microservices on AWS Lambda. Asynchronous processing with SQS and SNS, DynamoDB persistence, and Stripe and PayPal integration with webhooks, idempotency, and refunds.",
-        imageAlt: "Payment Events: serverless backend with AWS Lambda, SQS, SNS, and DynamoDB",
-        tags: ["Backend", "AWS", "Serverless"],
-        showFullDescription: true,
-      },
-      {
-        title: "CryptoDash",
-        imageUrl: CryptoDashImage,
-        description:
-          "Frontend crypto dashboard with real-time CoinGecko data, portfolio management, interactive charts, bilingual support. Production deployed: see link below.",
-        imageAlt: "CryptoDash dashboard with cryptocurrency metrics and charts",
-        tags: ["Frontend", "Crypto"],
-        frontendUrl: "https://github.com/peLuis123/cryptodash",
-        frontendDocsUrl: "https://peluis123-cryptodash.mintlify.app/",
-        backendUrl: "#",
-        demoUrl: "https://drive.google.com/file/d/16CMr6bE1UkZ6aC2UllK3Y5YesHRiFUyp/view?usp=drive_link",
-        productionUrl: "https://crypto-dashx.netlify.app/"
-      },
-      {
-        title: "CryptoShop",
-        imageUrl: CryptoShopImage,
-        description:
-          "Fullstack crypto e-commerce with TRX payments: frontend with client/admin panels and backend with JWT, orders, on-chain confirmation, and Socket.io.",
-        imageAlt: "Crypto shop interface with admin panel and payment flow",
-        tags: ["Fullstack", "TRX"],
-        frontendUrl: "https://github.com/peLuis123/crypto-shop-frontend",
-        backendUrl: "https://github.com/peLuis123/crypto-shop-backend",
-        frontendDocsUrl: "https://peluis123-crypto-shop-frontend.mintlify.app/introduction",
-        backendDocsUrl: "https://peluis123-crypto-shop-backend-30.mintlify.app/introduction",
-        demoUrl: "https://drive.google.com/file/d/18ktZ2Pm8QbadIrVFiQN-wAr-Vg8Ox6r3/view?usp=drive_link"
-      },
-      {
-        title: "Stripe Payments API",
-        imageUrl: StripeImage,
-        description:
-          "Modular backend API for customers, cards, payments, refunds, and Stripe webhooks with centralized error handling and Swagger docs.",
-        imageAlt: "Stripe payments API with modular architecture and documentation",
-        tags: ["Backend", "Stripe"],
-        frontendUrl: "#",
-        backendUrl: "https://github.com/peLuis123/Stripe_Back",
-        backendDocsUrl: "https://peluis123-stripe_back.mintlify.app/",
-        demoUrl: "https://drive.google.com/file/d/1JQcI4XQjLq5J7WLIwTStIVUmhA2fM0GT/view?usp=drive_link",
-        productionUrl: "https://api-stripe.onrender.com/doc/"
-      },
-      {
-        title: "VideoGames Platform",
-        imageUrl: VideoGamesImage,
-        description:
-          "Game buying and selling platform with catalog, user library, subscriptions, and payment methods, integrated with a dedicated backend.",
-        imageAlt: "Video games platform with catalog and personal library",
-        tags: ["Fullstack", "Gaming"],
-        frontendUrl: "https://github.com/peLuis123/videogames",
-        backendUrl: "https://github.com/peLuis123/albun-backend",
-        backendDocsUrl: "https://peluis123-albun-backend.mintlify.app/introduction",
-        demoUrl: "#"
       }
     ]
   },

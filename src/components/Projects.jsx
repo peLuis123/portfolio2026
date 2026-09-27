@@ -123,6 +123,7 @@ function Projects() {
                     </span>
                   ))}
                 </div>
+                <span className="text-xs text-slate-500 mb-2">{project.projectType}</span>
                 <h3 className="text-xl font-bold mb-2">{project.title}</h3>
                 <p className="text-slate-400 text-sm mb-5 line-clamp-2">{project.description}</p>
                 <span className="text-primary text-sm font-medium mt-auto">{projects.detailsLabel} ↗</span>

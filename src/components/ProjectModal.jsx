@@ -28,8 +28,10 @@ export default function ProjectModal({ project, projects, onClose }) {
       </div>
       <img className="project-modal-image" src={project.imageUrl} alt={project.imageAlt} />
       <div className="project-modal-content">
+        <p className="text-sm text-primary mb-4">{project.projectType}</p>
         <div className="flex flex-wrap gap-2 mb-5">{project.tags.map(tag => <span key={tag} className="text-xs rounded-full px-3 py-1 bg-primary/10 text-primary">{tag}</span>)}</div>
         <p className="text-slate-400 leading-relaxed mb-6">{project.description}</p>
+        {project.caseStudy && <dl className="space-y-4 mb-7">{project.caseStudy.map((detail, index) => <div key={projects.caseLabels[index]}><dt className="font-semibold mb-1">{projects.caseLabels[index]}</dt><dd className="text-sm text-slate-400 leading-relaxed">{detail}</dd></div>)}</dl>}
                 <div className="flex items-center gap-4 flex-wrap mt-auto">
                   {hasLink(project.codeUrl) && (
                     <a className="flex items-center gap-1.5 text-sm font-medium hover:text-primary transition-colors" {...getLinkProps(project.codeUrl)}>
@@ -67,7 +69,7 @@ export default function ProjectModal({ project, projects, onClose }) {
                       {projects.demoLabel}
                     </a>
                   )}
-                  {project.productionUrl && project.title === "CryptoDash" && (
+                  {hasLink(project.productionUrl) && (
                     <a className="flex items-center gap-1.5 text-sm font-medium hover:text-green-500 transition-colors" href={project.productionUrl} target="_blank" rel="noopener noreferrer">
                       <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="currentColor"/><path d="M8 12l2 2 4-4" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round"/></svg>
                       {projects.productionLabel}

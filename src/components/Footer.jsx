@@ -13,15 +13,15 @@ function Footer() {
 
         <div className="flex items-center gap-2">
           <div className="w-6 h-6 bg-primary rounded flex items-center justify-center font-bold text-white text-[10px]">
-            LD
+            PR
           </div>
           <span className="text-base font-bold tracking-tight text-slate-300">
-            Luis<span className="text-primary">Dev</span>
+            Pedro <span className="text-primary">Ramos</span>
           </span>
         </div>
 
         <p>
-          © {currentYear} LuisDev Portfolio. {footer.built}
+          © {currentYear} Pedro Ramos. {footer.built}
         </p>
 
         <div className="flex gap-6 text-xs uppercase tracking-widest font-mono">
